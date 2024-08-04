@@ -1,0 +1,355 @@
+.flexSpaceBetween,
+.payPlanFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.background-home {
+  position: absolute;
+  width: 100%;
+}
+
+.big-logo {
+  position: absolute;
+  z-index: 2;
+  top: 39%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.film1 {
+  width: 160px;
+  min-width: 160px;
+  height: 200px;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.banner-home {
+  display: flex;
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+  gap: 10px;
+  overflow: hidden;
+}
+.row2,
+.row3,
+.row4 {
+  margin-top: 10px;
+}
+
+.title-home {
+  font-size: 4.8rem;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 63%;
+  left: 50%;
+  width: max-content;
+  transform: translate(-50%, 50%);
+  letter-spacing: 0.4px;
+}
+
+.desc-under-title-home,
+.desc-under-title-home-small {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--secondryColor);
+  width: 59%;
+  line-height: 150%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.desc-under-title-home-small {
+  display: none;
+}
+/*  */
+/* various devices styling */
+/*  */
+.row1-various {
+  margin-top: 60px;
+}
+.card-various {
+  width: 405px;
+  height: 230px;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid var(--borderColor);
+}
+.shade-box-various {
+  background-color: rgb(15, 15, 15, 0.8);
+  width: 405px;
+  height: 230px;
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.gradient-box {
+  width: 405px;
+  height: 230px;
+  background: linear-gradient(
+    to right top,
+    rgb(15, 15, 15, 1),
+    rgb(15, 15, 15, 1),
+    rgb(15, 15, 15, 0.2),
+    rgb(229, 0, 0, 0.3)
+  );
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
+}
+
+.device-type-title-flex {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  z-index: 3;
+}
+.device-type-title-flex h2 {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-top: 14px;
+  z-index: 3;
+}
+
+.device-type {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--mainColor);
+  border: 1px solid var(--borderColor);
+}
+
+.imgDevice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.desc-various {
+  position: absolute;
+  left: 40px;
+  top: 118px;
+  color: var(--secondryColor);
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 80%;
+  line-height: 150%;
+  z-index: 3;
+}
+
+.flexVarious {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+/*  */
+/* FQAs section */
+/*  */
+.flex-questions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.flexQuestions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.freq-title-button-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.question-number {
+  width: 8%;
+  height: 54px;
+  font-size: 1.6rem;
+  background-color: var(--borderColor);
+  border-radius: 6px;
+  border: 1px solid #262626;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-content,
+.question-content-hidden {
+  color: white;
+  font-weight: 400;
+  width: 220px;
+  font-size: 2rem;
+}
+.question-content-hidden {
+  margin-top: 14px;
+}
+.answer {
+  color: var(--secondryColor);
+  margin-top: 14px;
+  width: 90%;
+  line-height: 140%;
+  font-size: 1.6rem;
+}
+
+.question,
+.question-hidden {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 16px;
+  width: 600px;
+  position: relative;
+}
+
+.minus-icon,
+.plus-icon {
+  position: absolute;
+  margin-bottom: 60px;
+  right: 0;
+}
+
+.line-between-questions {
+  width: 620px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgb(229, 0, 0, 0.2),
+    rgb(229, 0, 0, 1),
+    rgb(229, 0, 0, 0.9),
+    rgb(229, 0, 0, 0.6),
+    rgb(229, 0, 0, 0.3),
+    rgb(229, 0, 0, 0)
+  );
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.plan-card {
+  width: 32%;
+  height: 350px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 2px solid var(--borderColor);
+  position: relative;
+}
+.plan-content {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 75%;
+  height: 250px;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.btn-trial {
+  padding: 17px 30px 17px 30px;
+  background-color: var(--mainColor);
+  border-radius: 10%;
+  color: white;
+  font-size: 1.4rem;
+  border: 1px solid var(--borderColor);
+}
+
+.two-btns-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.money-plan-span {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.money-plan {
+  color: var(--secondryColor);
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+
+.plan-title {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.plan-desc {
+  color: var(--secondryColor);
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+.payPlanFlex {
+  margin-bottom: 100px;
+}
+/*  */
+/* banner trial end home-page  */
+/*  */
+.banner-trial {
+  height: 240px;
+  position: relative;
+  border-radius: 12px;
+  z-index: -2;
+  overflow: hidden;
+}
+.cover-banner-trial {
+  z-index: -1;
+  height: 240px;
+  background: linear-gradient(
+    to right,
+    rgb(15, 15, 15),
+    rgb(15, 15, 15, 0.98),
+    rgb(15, 15, 15, 0.95),
+    rgb(34, 15, 15, 0.9),
+    rgb(34, 15, 15, 0.87),
+    rgb(68, 14, 14, 0.8),
+    rgba(68, 15, 15, 0.8)
+  );
+  border-radius: 12px;
+  border: 1px solid var(--borderColor);
+}
+
+.banner-trail-content {
+  position: absolute;
+  width: 100%;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  justify-content: space-around;
+}
+.banner-trail-content p{
+  font-size: 1.6rem;
+}
+.banner-under-photos {
+  width: 1400px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: -3;
+}
+
+/*  */
+/* styling for footer */
+/*  */

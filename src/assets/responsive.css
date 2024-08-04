@@ -1,0 +1,119 @@
+html {
+  font-size: 10px; /* Default font size */
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px; /* Smaller font size for screens <= 1200px */
+  }
+  .main-container-home2 {
+    width: 95%;
+  }
+  .header {
+    width: 95% !important ;
+  }
+
+  .desc-under-title-home {
+    top: 68%;
+  }
+  .plan-content {
+    width: 90%;
+  }
+  .card-various,
+  .shade-box-various,
+  .gradient-box {
+    width: 305px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 776px) {
+  html {
+    font-size: 7.9px; /* Smaller font size for screens <= 768px */
+  }
+  .desc-under-title-home {
+    width: 90%;
+  }
+  .flexVarious {
+    gap: 20px;
+    justify-content: baseline;
+  }
+  .plan-card {
+    width: 48%;
+  }
+  .payPlanFlex {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .burger-frame {
+    display: block !important;
+  }
+  .header-menu {
+    display: none;
+  }
+  .question,
+  .question-hidden,
+  .question-width,
+  .line-between-questions {
+    width: 100%;
+  }
+  .question-number {
+    width: 12%;
+    height: 40px;
+  }
+  .plan-desc {
+    font-size: 1.9rem;
+  }
+  .banner-trail-content {
+    width: 93%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8.5px; /* Smaller font size for screens <= 768px */
+  }
+  .title-home {
+    width: 95%;
+    text-align: center;
+    top: 55%;
+  }
+  .desc-under-title-home {
+    display: none;
+  }
+  .desc-under-title-home-small {
+    display: block;
+  }
+  .title-home {
+    font-size: 4rem;
+  }
+  .desc-under-title-home-small {
+    width: 90%;
+  }
+  .plan-card {
+    width: 95%;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider-catigory {
+    display: none !important;
+  }
+  .flexSpaceCards,
+  .flexCardsMoviesPage {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap !important;
+    flex-direction: row;
+    width: 350%;
+    overflow: hidden;
+    margin-bottom: 50px !important;
+  }
+  .scroll-container {
+    width: 108.5% !important;
+  }
+}
+
+/* end of home and general styling */

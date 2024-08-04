@@ -1,0 +1,154 @@
+.background-movie-banner {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  border: 0.2px solid rgb(69, 69, 69);
+  object-fit: cover;
+}
+.background-movie-banner,
+.fade-movies-shows,
+.movieBanner {
+  position: relative;
+  height: 650px;
+  margin-top: 18px;
+  border-radius: 12px;
+  margin-bottom: 120px;
+}
+.fade-movies-shows {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(15, 15, 15, 0.1),
+    rgb(15, 15, 15, 1)
+  );
+}
+.movieBanner {
+  position: relative;
+}
+.title-desc-movie-banner {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  /* width: 70%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.title-desc-movie-banner h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: white;
+}
+.title-desc-movie-banner p {
+  width: 140%;
+  font-size: 1.5rem;
+  color: rgb(170, 170, 170);
+}
+.three-icons-banner {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.flex-slider-banner-movies {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.flex {
+  display: flex;
+  gap: 5px;
+}
+.icon-in-square {
+  width: 45%;
+}
+
+.container-movies-shows {
+  border-radius: 12px;
+  border: 1px solid #262626;
+  position: relative;
+  margin-bottom: 120px;
+  /* overflow: auto; */
+  z-index: -1;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.red-catig {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 8px;
+  margin-top: -20px;
+  font-size: 1.6rem;
+  z-index: 2;
+  background-color: var(--secondryRedColor);
+}
+.flexSlider {
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.container-movies-shows-content {
+  /* to make padding works even in mobile size screens */
+  padding-right: 20px;
+  padding-left: 40px;
+  /* to set all elements in the center verticlly */
+  margin-right: auto;
+  margin-left: auto;
+  /* set the width for the container */
+  position: relative;
+}
+.title-movies {
+  margin-top: 15px;
+}
+
+.duiration-film,
+.release-film {
+  display: none;
+  gap: 3px;
+  background-color: #141414;
+  border-radius: 20px;
+  border: 1px #262626 solid;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  color: #999999;
+}
+.duiration-film {
+  padding: 6px;
+}
+.release-film {
+  padding: 6px 23px 6px 23px;
+}
+.duiration-film.active {
+  display: flex;
+}
+.release-film.active {
+  display: flex;
+}
+.flex-duiration-seasion {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+}
