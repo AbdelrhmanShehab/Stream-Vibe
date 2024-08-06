@@ -46,7 +46,7 @@ function MoviePage() {
           descMovieBanner="Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse."
         />
         {/* end of movie banner */}
-        <div style={{ display: "flex", flexWrap:"wrap", gap: "20px", marginBottom: "80px" }}>
+        <div style={{ display: "flex",  gap: "20px", marginBottom: "80px" }}>
           <div>
             <MovieDesc descMovie="Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse." />
             {/* end of movies desc */}
