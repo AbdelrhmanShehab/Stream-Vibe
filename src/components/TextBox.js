@@ -5,7 +5,7 @@ const TextBox = ({ labelForBox, boxTextHolder, widthBox }) => {
     <div className="label-textbox">
       <label class="label-box">{boxTextHolder}</label>
       <input
-        class="text-box"
+        className="text-box"
         type="text"
         placeholder={labelForBox}
       />

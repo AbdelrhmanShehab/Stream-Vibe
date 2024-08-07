@@ -14,14 +14,7 @@ const MovieCast = (castImgs) => {
     <>
       <div className="movie-details">
         <h3 className="title-box-movie-det">Cast</h3>
-        <div className="flex-arrows">
-          <div className="circle-arrow">
-            <img src={leftArrow} />
-          </div>
-          <div className="circle-arrow">
-            <img src={rightArrow} />
-          </div>
-        </div>
+       
 
         <div className="flex-cast">
           <img className="actor-square" src={walter} />

@@ -6,6 +6,7 @@
   border: solid 4px var(--borderColor);
   position: relative;
   overflow: hidden;
+  flex: 1;
 }
 .banner-support-content {
   display: flex;
@@ -14,6 +15,7 @@
   position: absolute;
   margin-left: -40px;
   margin-top: -120px;
+  flex: 1;
 }
 
 .support-message-box {
@@ -23,4 +25,36 @@
   position: relative;
   padding: 30px;
   width: 61%;
+  flex: 1;
+}
+
+.flex-message {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .support-message-box,
+  .banner-support {
+    flex-basis: 100%;
+  }
+  .banner-support {
+    max-width: 450px;
+    min-width: 100px;
+  }
+  .support-message-box {
+    min-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .label-textbox {
+    width: auto;
+  }
+  .text-box{
+    width: 200%;
+  }
+  .flex-message {
+    display: block;
+  }
 }

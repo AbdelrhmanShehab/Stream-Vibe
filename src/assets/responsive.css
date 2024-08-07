@@ -25,6 +25,15 @@ html {
     width: 305px;
     height: 250px;
   }
+  .flex-movie-dets {
+    flex-wrap: wrap;
+  }
+  .movie-details-more {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 776px) {
@@ -67,6 +76,13 @@ html {
   }
   .banner-trail-content {
     width: 93%;
+  }
+  .movie-det-flex {
+    display: block;
+    width: 100%;
+  }
+  .movie-review-box{
+    width: 200px;
   }
 }
 

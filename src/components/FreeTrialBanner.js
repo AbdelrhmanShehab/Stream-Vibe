@@ -81,7 +81,7 @@ const FreeTrialBanner = ({ bannerImage }) => {
               color: "white",
               marginBottom: "20px",
               fontWeight: "500",
-              fontSize: "3.2rem",
+              fontSize: "2.9rem",
             }}
           >
             Strat your free trial today!

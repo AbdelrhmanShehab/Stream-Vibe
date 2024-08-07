@@ -118,7 +118,7 @@ function Support() {
                   lineHeight: "150%",
                   fontWeight: "300",
                   color: "white",
-                  width: "300px",
+                  width: "100%",
                   fontWeight: "bold",
                   marginBottom: "1.8rem",
                 }}
@@ -131,7 +131,7 @@ function Support() {
                   color: "#999999",
                   fontSize: "1.5rem",
                   fontWeight: "500",
-                  width: "450px",
+                  width: "100%",
                   lineHeight: "150%",
                   marginBottom: "35px",
                 }}
@@ -154,13 +154,14 @@ function Support() {
           {/* end of flex left support */}
           <div className="support-message-box">
             <div className="flex-message">
-              <div style={{ width: "45%" }}>
+              <div className="text-boxes-flex" style={{ width: "45%" }}>
                 <TextBox boxTextHolder="First Name" labelForBox="First Name" />{" "}
                 <TextBox boxTextHolder="Email" labelForBox="Enter your Email" />
               </div>
               <div style={{ width: "45%" }}>
                 <TextBox boxTextHolder="Last Name" labelForBox="Last Name" />
                 <div
+                  className="text-boxes-flex"
                   style={{
                     display: "flex",
                     flexWrap: "wrap",

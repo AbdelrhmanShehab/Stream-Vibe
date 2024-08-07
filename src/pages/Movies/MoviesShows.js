@@ -88,37 +88,37 @@ function MoviesShows() {
     },
   ];
   // film card data
-  const viewsFilmCardData = [
+  const trendingFilmsCardData = [
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film1,
       filmDuiration: "1h 30mins",
       filmViews: "3k",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: adv2,
       filmDuiration: "1h 54mins",
       filmViews: "5k",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: adv1,
       filmDuiration: "2h 30mins",
       filmViews: "2k",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film2,
       filmDuiration: "1h 40mins",
       filmViews: "17k",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film5,
       filmDuiration: "1h 36mins",
@@ -127,31 +127,31 @@ function MoviesShows() {
   ];
   const releaseFilmCardData = [
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film6,
       releaseDate: "15 March 2002",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: sifi2,
       releaseDate: "07 April 2023",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: sifi1,
       releaseDate: "19 May 2023",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film3,
       releaseDate: "05 Jan 2023",
     },
     {
-      widthSizeCard: "18.5%",
+      widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film8,
       releaseDate: "16 October 2023",
@@ -159,7 +159,7 @@ function MoviesShows() {
   ];
   const ratingFilmCardData = [
     {
-      widthSizeCard: "23%",
+      widthSizeCard: "296px",
       heightSizeCard: "350px",
       filmImg: film13,
       releaseDate: "07 April 2023",
@@ -167,14 +167,14 @@ function MoviesShows() {
       filmDuiration: "1h 40mins",
     },
     {
-      widthSizeCard: "23%",
+      widthSizeCard: "296px",
       heightSizeCard: "350px",
       filmImg: sifi3,
       filmViews: "20k",
       filmDuiration: "1h 40mins",
     },
     {
-      widthSizeCard: "23%",
+      widthSizeCard: "296px",
       heightSizeCard: "350px",
       filmImg: film12,
       releaseDate: "05 Jan 2023",
@@ -182,7 +182,7 @@ function MoviesShows() {
       filmDuiration: "1h 40mins",
     },
     {
-      widthSizeCard: "23%",
+      widthSizeCard: "296px",
       heightSizeCard: "350px",
       filmImg: film6,
       releaseDate: "16 October 2023",
@@ -251,7 +251,7 @@ function MoviesShows() {
             </div>
             <div className="scroll-container">
               <div className="flexCardsMoviesPage">
-                {viewsFilmCardData.map((data, index) => (
+                {trendingFilmsCardData.map((data, index) => (
                   <CardFilm
                     key={index}
                     showDiv={true}
