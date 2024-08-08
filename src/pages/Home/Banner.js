@@ -6,7 +6,7 @@ import MainBtn from "../../components/MainBtn";
 import PhotoHomeBanner from "./PhotoHomeBanner";
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
-import film2 from "../../assets/imgs/film2.jpg";
+import film2 from "../../assets/imgs/film2.jpeg";
 import film3 from "../../assets/imgs/film3.jpg";
 import film4 from "../../assets/imgs/film4.jpg";
 import film5 from "../../assets/imgs/film5.jpg";

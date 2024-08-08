@@ -73,7 +73,7 @@
   margin-top: 60px;
 }
 .card-various {
-  width: 405px;
+  width: 400px;
   height: 230px;
   background-color: #0f0f0f;
   border-radius: 10px;
@@ -82,7 +82,7 @@
 }
 .shade-box-various {
   background-color: rgb(15, 15, 15, 0.8);
-  width: 405px;
+  width: 400px;
   height: 230px;
   position: absolute;
   right: 0;
@@ -91,7 +91,7 @@
 }
 
 .gradient-box {
-  width: 405px;
+  width: 400px;
   height: 230px;
   background: linear-gradient(
     to right top,
@@ -104,6 +104,7 @@
   right: 0;
   border-radius: 10px;
 }
+
 
 .device-type-title-flex {
   display: flex;
@@ -340,7 +341,7 @@
   gap: 20px;
   justify-content: space-around;
 }
-.banner-trail-content p{
+.banner-trail-content p {
   font-size: 1.6rem;
 }
 .banner-under-photos {

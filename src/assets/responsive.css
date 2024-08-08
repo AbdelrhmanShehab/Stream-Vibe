@@ -81,8 +81,13 @@ html {
     display: block;
     width: 100%;
   }
-  .movie-review-box{
+  .movie-review-box {
     width: 200px;
+  }
+  .card-various,
+  .shade-box-various,
+  .gradient-box {
+    width: 90%;
   }
 }
 
@@ -113,6 +118,9 @@ html {
 }
 
 @media (max-width: 420px) {
+  body{
+    width: 98%;
+  }
   .slider-catigory {
     display: none !important;
   }

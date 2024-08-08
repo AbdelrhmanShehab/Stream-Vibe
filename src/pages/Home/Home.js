@@ -2,7 +2,6 @@ import React from "react";
 import "../../assets/App.css";
 import "./home.css";
 import "../../assets/responsive.css";
-import MoviesShows from "../Movies/MoviesShows";
 import Header from "../../components/Header";
 import Banner from "../../pages/Home/Banner";
 import HeaderDesc from "../../components/HeaderDesc";
@@ -18,7 +17,7 @@ import PhotoBanner from "../../components/PhotoBanner";
 import Footer from "../../components/Footer";
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
-import film2 from "../../assets/imgs/film2.jpg";
+import film2 from "../../assets/imgs/film2.jpeg";
 import film3 from "../../assets/imgs/film3.jpg";
 import film4 from "../../assets/imgs/film4.jpg";
 import film5 from "../../assets/imgs/film5.jpg";

@@ -1,5 +1,4 @@
 import React from "react";
-import "./responsive-movies.css";
 import Header from "../../components/Header";
 import BannerMovie from "../../components/BannerMovie";
 import HeaderDesc from "../../components/HeaderDesc";
@@ -10,21 +9,17 @@ import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
-import film2 from "../../assets/imgs/film2.jpg";
+import film2 from "../../assets/imgs/lost.jpg";
 import film3 from "../../assets/imgs/film3.jpg";
 import film4 from "../../assets/imgs/film4.jpg";
 import film5 from "../../assets/imgs/film5.jpg";
 import film6 from "../../assets/imgs/film6.jpg";
 import film7 from "../../assets/imgs/film7.jpg";
 import film8 from "../../assets/imgs/film8.jpg";
-import film9 from "../../assets/imgs/film9.jpg";
 import film10 from "../../assets/imgs/film10.jpg";
-import film11 from "../../assets/imgs/film11.jpg";
 import film12 from "../../assets/imgs/film12.jpg";
 import film13 from "../../assets/imgs/film13.png";
 import film14 from "../../assets/imgs/film14.jpg";
-import film15 from "../../assets/imgs/film15.jpg";
-import film16 from "../../assets/imgs/film16.jpg";
 import film17 from "../../assets/imgs/film17.jpeg";
 import adv1 from "../../assets/imgs/adv1.jpg";
 import adv2 from "../../assets/imgs/adv2.jpg";
@@ -37,6 +32,29 @@ import horror1 from "../../assets/imgs/horror1.jpg";
 import horror2 from "../../assets/imgs/horror2.jpeg";
 import horror3 from "../../assets/imgs/horror3.jpg";
 import horror4 from "../../assets/imgs/horror4.jpg";
+const sliderData = [
+  {
+    title: "Avengers: Endgame",
+    sliderImage: film4,
+    desc: "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.",
+  },
+  {
+    title: "Lost",
+    sliderImage: film2,
+    desc: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
+  },
+  {
+    title: "Joker",
+    sliderImage: film7,
+    desc: "Failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while in Arkham State Hospital. Upon release, the pair embark on a doomed romantic ...",
+  },
+  {
+    title: "Room",
+    sliderImage: film13,
+    desc: "A little boy is held captive in a room with his mother since his birth, so he has never known the world outside.",
+  },
+];
+
 function MoviesShows() {
   const cardCatigoresData = [
     {
@@ -195,11 +213,7 @@ function MoviesShows() {
     <>
       <Header />
       <div className="main-container-home2">
-        <BannerMovie
-          backgroundMovieBanner={film4}
-          titleMovieBanner="Avengers: Endgame"
-          descMovieBanner="With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen."
-        />
+        <BannerMovie />
         <div className="container-movies-shows">
           <div className="container-movies-shows-content">
             <div className="red-catig center-flex">Movies</div>

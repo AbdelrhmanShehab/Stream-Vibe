@@ -5,6 +5,8 @@ import SideBarNav from "./SideBarNav";
 import "./components.css";
 import "../assets/responsive.css";
 import SearchNotifi from "./SearchNotifi";
+import { Link, useLocation } from "react-router-dom";
+
 function Header() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
@@ -14,7 +16,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <Logo onBurgerClick={handleBurgerClick} />
+        <Link to="/">
+          <Logo onBurgerClick={handleBurgerClick} />
+        </Link>
         <SideBarNav isOpen={isSideBarOpen} />
         <NavMenu />
         <SearchNotifi />
