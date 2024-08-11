@@ -13,7 +13,6 @@ import FAQs from "./FAQs";
 import PayPlan from "./PayPlan";
 import Toggle from "../../components/Toggle";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
-import PhotoBanner from "../../components/PhotoBanner";
 import Footer from "../../components/Footer";
 // import images
 import film1 from "../../assets/imgs/film1.jpg";

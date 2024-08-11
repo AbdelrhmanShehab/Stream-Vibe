@@ -10,6 +10,15 @@
 .movie-details-more {
   height: fit-content;
 }
+@media (max-width: 420px) {
+  .lang-translate{
+    width: 100%;
+  }
+  .imdb-stream{
+    display: flex !important;
+  }
+}
+
 .btn-review-det {
   display: flex;
   align-items: baseline;

@@ -29,7 +29,7 @@ const MovieMoreDets = ({
   ];
   return (
     <div className="movie-details-more">
-      <div>
+      <div className="lang-translate">
         <h3 className="titleMoreDets">
           <img style={{ marginBottom: "5px" }} src={releaseIcon} /> Released
           Year
@@ -67,7 +67,6 @@ const MovieMoreDets = ({
           </div>
         </div>
       </div>
-      {/*  */}
       {/*  */}
       {/*  */}
       <div>

@@ -187,6 +187,7 @@
   border: 1px solid #262626;
   color: white;
   display: flex;
+  margin-top: -15px;
   align-items: center;
   justify-content: center;
 }
@@ -221,6 +222,7 @@
 .minus-icon,
 .plus-icon {
   position: absolute;
+  cursor: pointer;
   margin-bottom: 60px;
   right: 0;
 }

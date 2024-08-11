@@ -5,6 +5,7 @@ import MoviesShows from "./pages/Movies/MoviesShows";
 import Support from "./pages/Support/Support";
 import Subscriptions from "./pages/Subscriptions/Subscriptions";
 import MoviePage from "./pages/movie details/MoviePage";
+import MovieList from "./pages/MovieList/MovieList";
 import { Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/support" element={<Support />} />;
         <Route path="/subscriptions" element={<Subscriptions />} />;
         <Route path="/movie" element={<MoviePage />} />;
+        <Route path="/movies-result" element={<MovieList />} />;
       </Routes>
     </div>
   );
