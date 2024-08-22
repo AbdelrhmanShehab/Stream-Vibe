@@ -12,7 +12,7 @@
 }
 @media (max-width: 420px) {
   .lang-translate{
-    width: 100%;
+    width: 90%;
   }
   .imdb-stream{
     display: flex !important;

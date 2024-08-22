@@ -1,5 +1,65 @@
+.movies-list-content {
+  margin-top: 60px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 80px;
+}
 .movies-result-head {
   color: white;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 500;
+  margin-top: 40px;
+}
+.duiration-one-film {
+  padding: 5px 10px;
+}
+
+.film-title-cat-result {
+  position: absolute;
+  bottom: -60px;
+  cursor: pointer;
+}
+
+.film-title-result {
+  font-weight: 600;
+  color: rgb(208, 208, 208);
+  font-size: 1.6rem;
+}
+.film-title-cat-result:hover {
+  content: attr(data-full-title);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  white-space: nowrap;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.film-title-cat-result p {
+  font-weight: 500;
+  color: rgb(153, 153, 153);
+  font-size: 1.3rem;
+}
+.film-title-cat-result span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.film-img-card {
+  color: white;
+  font-size: 1.6rem;
+}
+.no-movies {
+  color: burlywood;
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }

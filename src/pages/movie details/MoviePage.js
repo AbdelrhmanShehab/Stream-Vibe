@@ -1,7 +1,6 @@
 import React from "react";
 import "../movie details/movieDet.css";
 import "../../assets/responsive.css";
-import BannerMovie from "../../components/BannerMovie";
 import Header from "../../components/Header";
 import film7 from "../../assets/imgs/film3.jpg";
 import MovieDesc from "./MovieDesc";
@@ -11,6 +10,9 @@ import plusIcon from "../../assets/imgs/plusWhite.svg";
 import MovieMoreDets from "./MovieMoreDets";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
+import MovieBanner from "./MovieBanner";
+import { Link, useLocation } from "react-router-dom";
+
 // photos import
 import walter from "../../assets/imgs/walterWhite.jpg";
 import jessy from "../../assets/imgs/jessy.jpg";
@@ -22,6 +24,8 @@ import rightArrow from "../../assets/imgs/right-arrow-icon.svg";
 
 function MoviePage() {
   const castImgsData = [walter, jessy, anna, hank, guss];
+  const currentLocation = useLocation();
+
   const reviewCardData = [
     {
       reviewOwner: "Abdelrhman",
@@ -38,9 +42,9 @@ function MoviePage() {
   ];
   return (
     <>
-      <Header />
+      {currentLocation.pathname === "/movie" && <Header />}
       <div className="main-container-home2">
-        <BannerMovie
+        <MovieBanner
           backgroundMovieBanner={film7}
           titleMovieBanner="Breaking Bad"
           descMovieBanner="Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse."

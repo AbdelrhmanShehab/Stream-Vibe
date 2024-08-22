@@ -7,6 +7,8 @@ import CardCatigores from "../../components/CardCatigores";
 import CardFilm from "../../components/CardFilm";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
+import { useLocation } from "react-router-dom";
+
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
 import film2 from "../../assets/imgs/lost.jpg";
@@ -208,10 +210,11 @@ function MoviesShows() {
       filmDuiration: "1h 40mins",
     },
   ];
+  const currentLocation = useLocation();
 
   return (
     <>
-      <Header />
+      {currentLocation.pathname === "/movies-shows" && <Header />}
       <div className="main-container-home2">
         <BannerMovie />
         <div className="container-movies-shows">

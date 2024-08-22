@@ -132,7 +132,9 @@
   background-color: #0f0f0f;
   border: solid 3px #1a1a1a;
   border-radius: 10px;
-  padding: 10px 20px;
+  height: 68px;
+  padding-left: 15px;
+  padding-right: 15px;
   top: 50%;
   list-style: none;
   color: white;
@@ -279,7 +281,8 @@
 /* end of slider */
 /*  */
 /* start of genres cards */
-.movies-types-card {
+.movies-types-card,
+.movies-card-result {
   width: 245px;
   height: 290px;
   background-color: #1a1a1a;
@@ -290,6 +293,18 @@
   z-index: -1;
   flex-grow: 1;
   max-width: 350px;
+}
+.movies-types-card {
+  width: 245px;
+}
+.card-catigores-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.movies-card-result {
+  width: 200px;
+  max-width: 200px;
 }
 .catirogries-title {
   font-weight: 500;
@@ -512,7 +527,9 @@
 }
 
 .active {
-  padding: 15px 18px 15px 18px;
+  height: 85%;
+  margin-top: 5px;
+  padding: 0px 18px;
   background-color: #1a1a1a;
   border-radius: 5px;
 }
@@ -537,6 +554,7 @@
   background-color: #181818;
   border-color: transparent;
   border: 2px solid var(--borderColor);
+  color: white;
 }
 .text-box {
   width: 100%;
@@ -621,4 +639,20 @@
   transform: translate(-50%);
   background-color: rgb(20, 20, 20, 0.7);
   width: 99vw;
+}
+
+.search-btn {
+  background-color: var(--secondryRedColor);
+  color: white;
+  border: solid 1px var(--borderColor);
+  width: 150px;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }

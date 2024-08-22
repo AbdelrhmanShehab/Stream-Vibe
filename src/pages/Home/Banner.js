@@ -4,6 +4,8 @@ import "./home.css";
 import "../../assets/responsive.css";
 import MainBtn from "../../components/MainBtn";
 import PhotoHomeBanner from "./PhotoHomeBanner";
+import { Link, useLocation } from "react-router-dom";
+
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
 import film2 from "../../assets/imgs/film2.jpeg";
@@ -120,11 +122,13 @@ const Banner = () => {
           movies and shows on demand, anytime, anywhere.
         </h3>
         <div className="middle-position">
-          <MainBtn
-            btnContent="Start Watching Now"
-            showIcon={true}
-            iconSize="20px"
-          />
+          <Link to="/all-movies">
+            <MainBtn
+              btnContent="Start Watching Now"
+              showIcon={true}
+              iconSize="20px"
+            />
+          </Link>{" "}
         </div>
       </figcaption>
     </figure>

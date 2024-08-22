@@ -1,13 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import movies from "../Data/MoviesData";
+import searchIcon from "../assets/imgs/search-icon.svg";
+import notifiIcon from "../assets/imgs/notifi-icon.svg";
 import "./components.css";
-import search from "../assets/imgs/search-icon.svg";
-import notifi from "../assets/imgs/notifi-icon.svg";
 
 function SearchNotifi() {
   const [isVisibleSearch, setVisibleSearch] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredMovies, setFilteredMovies] = useState([]);
+  const navigate = useNavigate(); // Initialize useNavigate
+
   function popSearchBar() {
     setVisibleSearch(!isVisibleSearch);
   }
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const performSearch = () => {
+    const result = movies.filter((movie) =>
+      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredMovies(result);
+    navigate("/movies-result", { state: { result } }); 
+  };
+
   return (
     <>
       {isVisibleSearch && (
@@ -15,13 +34,18 @@ function SearchNotifi() {
           <div className="fade-for-search"></div>
           <div className="search-box">
             <div className="label-textbox">
-              <label class="label-box-search">Search for a movie</label>
+              <label className="label-box-search">Search for a movie</label>
               <input
                 className="text-box-search"
                 type="text"
                 placeholder="type here.."
+                value={searchTerm}
+                onChange={handleSearch}
               />
             </div>
+            <button className="search-btn" onClick={performSearch}>
+              Search
+            </button>
           </div>
         </div>
       )}
@@ -29,12 +53,17 @@ function SearchNotifi() {
         <img
           style={{ cursor: "pointer" }}
           onClick={popSearchBar}
-          src={search}
+          src={searchIcon}
           alt="search-icon"
         />
-        <img className="notifi-icon-header" src={notifi} alt="search-icon" />
+        <img
+          className="notifi-icon-header"
+          src={notifiIcon}
+          alt="notifi-icon"
+        />
       </div>
     </>
   );
 }
+
 export default SearchNotifi;

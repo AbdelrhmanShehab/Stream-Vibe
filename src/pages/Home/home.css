@@ -196,7 +196,7 @@
 .question-content-hidden {
   color: white;
   font-weight: 400;
-  width: 220px;
+  width: fit-content;
   font-size: 2rem;
 }
 .question-content-hidden {

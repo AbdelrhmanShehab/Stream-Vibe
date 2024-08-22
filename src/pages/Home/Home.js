@@ -14,23 +14,16 @@ import PayPlan from "./PayPlan";
 import Toggle from "../../components/Toggle";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
+import { useLocation } from "react-router-dom";
 // import images
-import film1 from "../../assets/imgs/film1.jpg";
-import film2 from "../../assets/imgs/film2.jpeg";
 import film3 from "../../assets/imgs/film3.jpg";
 import film4 from "../../assets/imgs/film4.jpg";
 import film5 from "../../assets/imgs/film5.jpg";
 import film6 from "../../assets/imgs/film6.jpg";
-import film7 from "../../assets/imgs/film7.jpg";
-import film8 from "../../assets/imgs/film8.jpg";
-import film9 from "../../assets/imgs/film9.jpg";
 import film10 from "../../assets/imgs/film10.jpg";
-import film11 from "../../assets/imgs/film11.jpg";
 import film12 from "../../assets/imgs/film12.jpg";
 import film13 from "../../assets/imgs/film13.png";
 import film14 from "../../assets/imgs/film14.jpg";
-import film15 from "../../assets/imgs/film15.jpg";
-import film16 from "../../assets/imgs/film16.jpg";
 import film17 from "../../assets/imgs/film17.jpeg";
 import adv1 from "../../assets/imgs/adv1.jpg";
 import adv2 from "../../assets/imgs/adv2.jpg";
@@ -52,7 +45,6 @@ import ps from "../../assets/imgs/ps-icon.svg";
 import vr from "../../assets/imgs/vr-icon.svg";
 // FQAs section imgs
 import minusIcon from "../../assets/imgs/minus-icon.svg";
-import plusIcon from "../../assets/imgs/plus-icon.svg";
 
 function Home() {
   // catigores cards repetition
@@ -66,7 +58,7 @@ function Home() {
       image: [adv1, adv2, adv3, adv4],
     },
     {
-      title: "Sci-fi",
+      title: "Sci-Fi",
       image: [sifi1, sifi2, sifi3, film6],
     },
     {
@@ -130,23 +122,23 @@ function Home() {
     },
     {
       questionNum: "02",
-      questionContent: "What is StreamVibe?",
+      questionContent: "What devices can I use to watch StreamVibe?",
       questionAnswer:
-        "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        "You can watch StreamVibe on various devices, including smartphones, tablets, smart TVs, and computers. StreamVibe is compatible with most popular web browsers and operating systems.",
       miniMax: minusIcon,
     },
     {
       questionNum: "03",
-      questionContent: "What is StreamVibe?",
+      questionContent: "How do I search for movies and shows on StreamVibe?",
       questionAnswer:
-        "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        "Use the search bar located at the top of the homepage. Simply type in the title or keyword related to the movie or show you’re looking for, and press the search button to see the results.",
       miniMax: minusIcon,
     },
     {
       questionNum: "04",
-      questionContent: "What is StreamVibe?",
+      questionContent: "Can I download movies and shows for offline viewing?",
       questionAnswer:
-        "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        "Currently, StreamVibe does not offer a download feature. However, you can stream content online anytime as long as you have an active internet connection.",
       miniMax: minusIcon,
     },
     {
@@ -158,23 +150,24 @@ function Home() {
     },
     {
       questionNum: "06",
-      questionContent: "What is StreamVibe?",
+      questionContent: "What subscription plans does StreamVibe offer?",
       questionAnswer:
-        "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        "StreamVibe offers various subscription plans, including monthly and annual options. Each plan provides access to all movies and shows, with varying levels of HD quality and simultaneous",
       miniMax: minusIcon,
     },
     {
       questionNum: "07",
-      questionContent: "What is StreamVibe?",
+      questionContent: "How do I cancel my StreamVibe subscription?",
       questionAnswer:
-        "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        "To cancel your subscription, go to your account settings, select the subscription tab, and click Cancel Subscription Your access will remain active until the end of the billing period.",
       miniMax: minusIcon,
     },
     {
       questionNum: "08",
-      questionContent: "What is StreamVibe?",
+      questionContent:
+        "What should I do if I experience buffering or streaming issues?",
       questionAnswer:
-        "StreamVibe is a streaming service that allows you to watch movies and shows on demand.",
+        "If you experience buffering or streaming issues, try the following: check your internet connection, restart your device, or clear your browser cache. If the issue persists, contact our support team for assistance.",
       miniMax: minusIcon,
     },
   ];
@@ -201,14 +194,15 @@ function Home() {
       planMoney: "$14.99",
     },
   ];
-
+  const currentLocation = useLocation();
   return (
     <>
       <div className="fade-background-top"></div>
       <div className="fade-background-bottom"></div>
       <Banner />
-      <Header />
-
+      {/* header */}
+      {currentLocation.pathname === "/" && <Header />}
+      {/* header */}
       {/* end of banner */}
       {/* start of main page content */}
       <main className="main-container-home2">

@@ -5,8 +5,12 @@ import HeaderDesc from "../../components/HeaderDesc";
 import Toggle from "../../components/Toggle";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
-import "../../assets/responsive.css"
+import "../../assets/responsive.css";
+import { useLocation } from "react-router-dom";
+
 function Subscriptions() {
+  const currentLocation = useLocation();
+
   const payPlanData = [
     {
       planName: "Basic Plan",
@@ -30,7 +34,7 @@ function Subscriptions() {
 
   return (
     <>
-      <Header />
+      {currentLocation.pathname === "/subscriptions" && <Header />}
       <div className="main-container-home2">
         <div className="flexSpaceBetween" style={{ marginTop: "100px" }}>
           <HeaderDesc

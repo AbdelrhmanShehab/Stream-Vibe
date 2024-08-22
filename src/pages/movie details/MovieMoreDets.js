@@ -38,10 +38,11 @@ const MovieMoreDets = ({
           style={{
             color: "white",
             marginBottom: "20px",
-            widows: "fit-content",
+            fontSize:"1.6rem",
+            width: "fit-content",
           }}
         >
-          {releaseYear}
+          2023
         </p>
         <h3 className="titleMoreDets">
           <img style={{ marginBottom: "5px" }} src={langIcon} /> Available
