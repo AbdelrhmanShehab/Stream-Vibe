@@ -8,7 +8,7 @@ import CardFilm from "../../components/CardFilm";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
 import { useLocation } from "react-router-dom";
-
+import movies from "../../Data/MoviesData";
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
 import film2 from "../../assets/imgs/lost.jpg";
@@ -112,7 +112,8 @@ function MoviesShows() {
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
-      filmImg: film1,
+      filmImg: sifi1,
+      title: "Inception",
       filmDuiration: "1h 30mins",
       filmViews: "3k",
     },
@@ -179,7 +180,7 @@ function MoviesShows() {
   ];
   const ratingFilmCardData = [
     {
-      widthSizeCard: "296px",
+      widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: film13,
       releaseDate: "07 April 2023",
@@ -187,14 +188,14 @@ function MoviesShows() {
       filmDuiration: "1h 40mins",
     },
     {
-      widthSizeCard: "296px",
+      widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: sifi3,
       filmViews: "20k",
       filmDuiration: "1h 40mins",
     },
     {
-      widthSizeCard: "296px",
+      widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: film12,
       releaseDate: "05 Jan 2023",
@@ -202,7 +203,7 @@ function MoviesShows() {
       filmDuiration: "1h 40mins",
     },
     {
-      widthSizeCard: "296px",
+      widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: film6,
       releaseDate: "16 October 2023",
@@ -211,11 +212,11 @@ function MoviesShows() {
     },
   ];
   const currentLocation = useLocation();
-
+  // const { movie } = location.state || {};
   return (
     <>
       {currentLocation.pathname === "/movies-shows" && <Header />}
-      <div className="main-container-home2">
+      <main className="main-container-home2">
         <BannerMovie />
         <div className="container-movies-shows">
           <div className="container-movies-shows-content">
@@ -227,6 +228,7 @@ function MoviesShows() {
               </div>
               <SliderCatigores />
             </div>
+
             <div className="scroll-container">
               <div className="flexCardsMoviesPage">
                 {cardCatigoresData.map((data, index) => (
@@ -345,7 +347,7 @@ function MoviesShows() {
         </div>
         {/* end of movies container */}
         <FreeTrialBanner />
-      </div>
+      </main>
       {/* end of main-container-home */}
       <Footer />
     </>

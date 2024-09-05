@@ -1,5 +1,6 @@
 import React from "react";
 import clockIcon from "../../assets/imgs/clockIcon.svg";
+import { useNavigate } from "react-router-dom";
 
 const ResaultCardMovie = ({
   movieTitle,
@@ -17,11 +18,24 @@ const ResaultCardMovie = ({
     }
     return longTitle;
   };
+  const navigate = useNavigate();
 
+  const handleClick = () => {
+    // Pass the movie data as state when navigating
+    navigate("/movie", {
+      state: {
+        movieTitle,
+        filmImg,
+        filmDuration,
+        filmCat,
+        filmReleaseDate,
+      },
+    });
+  };
   const shortendTitle = handleLongTitle(movieTitle);
 
   return (
-    <article className="movies-card-result">
+    <article className="movies-card-result" onClick={handleClick}>
       <img className="film-img-card" src={filmImg} alt={movieTitle} />
       <div className="flex-duiration-seasion">
         <div className="duiration-one-film flex">

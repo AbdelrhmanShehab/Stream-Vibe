@@ -12,7 +12,7 @@ const CardCatigores = ({ title, image, sizeCard, showDiv, classNaame }) => {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const navigate = useNavigate(); // Initialize useNavigate
 
-  const performSearch = () => {
+  const filterCatigory = () => {
     const result = movies.filter(function handleCatigory(movie) {
       return movie.category.includes(title);
     });
@@ -22,7 +22,7 @@ const CardCatigores = ({ title, image, sizeCard, showDiv, classNaame }) => {
 
   return (
     <>
-      <button onClick={performSearch} className="card-catigores-button">
+      <button onClick={filterCatigory} className="card-catigores-button">
         <article style={{ width: sizeCard }} className="movies-types-card">
           <figure className="movies-card-content">
             <div className="movies-inside-card">

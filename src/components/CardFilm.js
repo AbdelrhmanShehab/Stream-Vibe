@@ -1,10 +1,9 @@
 import React from "react";
 import "./components.css";
 import clockIcon from "../assets/imgs/clockIcon.svg";
-import seasonsIcon from "../assets/imgs/seasonsIcon.svg";
 import eyeIcon from "../assets/imgs/eyeIcon.svg";
-import starIcon from "../assets/imgs/starIcon.svg";
 import ReviewStarts from "./ReviewStarts";
+
 const CardFilm = ({
   widthSizeCard,
   heightSizeCard,
@@ -17,8 +16,6 @@ const CardFilm = ({
   showDiv,
   filmDuiration,
   filmViews,
-  filmReleaseDate,
-  filmRating,
 }) => {
   return (
     <>
@@ -47,11 +44,12 @@ const CardFilm = ({
           )}
           {showDiv && (
             <div className={classNameRating}>
-              <ReviewStarts filmViews={filmViews}/>
+              <ReviewStarts filmViews={filmViews} />
             </div>
           )}
         </div>
       </article>
+      {" "}
     </>
   );
 };

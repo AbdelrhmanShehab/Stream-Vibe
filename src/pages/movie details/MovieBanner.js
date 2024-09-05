@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import "./movieDet.css";
 import MainBtn from "../../components/MainBtn";
 import SquareImg from "../../components/SquareImg";
 import plusIconWhite from "../../assets/imgs/plusWhite.svg";
 import soundIcon from "../../assets/imgs/soundIcon.svg";
 import likeIcon from "../../assets/imgs/likeIcon.svg";
+import { useNavigate,useLocation } from "react-router-dom";
+
 const squareDataMovie = [
   {
     squareIcon: plusIconWhite,
@@ -24,6 +26,8 @@ const MovieBanner = ({
   titleMovieBanner,
   descMovieBanner,
 }) => {
+  const location = useLocation();
+ 
   return (
     <>
       <figure className="movieBanner">
