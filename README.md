@@ -22,4 +22,4 @@ StreamVibe is a 7-page movie streaming website built with React, designed to off
 - **Various Components**: Modular components for a maintainable and scalable codebase.
 
 ## Application Run
-[StreamVibe](https://abdelrhmaan17.github.io/StreamVibe/))
+[StreamVibe](https://abdelrhmaan17.github.io/StreamVibe/)
