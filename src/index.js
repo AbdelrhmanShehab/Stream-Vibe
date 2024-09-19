@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { HashRouter } from 'react-router-dom';
+import reportWebVitals from './reportWebVitals'; //preforamnce tracking 
+import { HashRouter } from 'react-router-dom'; //for navigation in the website using #
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//creating root to render react components
+const root = ReactDOM.createRoot(document.getElementById('root')); 
 root.render(
   <HashRouter>
-    <App />
+    <App /> 
   </HashRouter>
 );
 
-reportWebVitals();
+reportWebVitals(); //performance tracking function

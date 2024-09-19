@@ -9,7 +9,10 @@ import { useLocation } from "react-router-dom";
 const MovieList = () => {
   const currentLocation = useLocation();
   const { result } = currentLocation.state || { result: [] };
-  const movieCategory = result.length > 0 ? result[5].category : "";
+  const movieCategory =
+    result.length > 0 && (result[1] === result[2]) === result[3]
+      ? result[4].category
+      : "";
   return (
     <>
       {currentLocation.pathname === "/movies-result" && <Header />}
@@ -18,13 +21,14 @@ const MovieList = () => {
         <div className="movies-list-content">
           {result.length > 0 ? (
             result.map((movie) => (
-                <ResultCardMovie
-                  movieTitle={movie.title}
-                  filmImg={movie.image}
-                  filmDuration={movie.duration}
-                  filmCat={movie.category}
-                  filmReleaseDate={movie.releaseDate}
-                />
+              <ResultCardMovie
+                movieTitle={movie.title}
+                filmImg={movie.image}
+                filmDesc={movie.description}
+                filmDuration={movie.duration}
+                filmCat={movie.category}
+                filmReleaseDate={movie.releaseDate}
+              />
             ))
           ) : (
             <p className="no-movies">No movies found :/</p>

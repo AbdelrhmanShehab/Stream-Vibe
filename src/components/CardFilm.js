@@ -22,6 +22,7 @@ const CardFilm = ({
       <article
         style={{ width: widthSizeCard, height: heightSizeCard }}
         className="movies-types-card"
+        // onClick={handleClick}
       >
         <img className="film-img-card" src={filmImg} />
         <div className="flex-duiration-seasion">

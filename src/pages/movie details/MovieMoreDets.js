@@ -10,6 +10,7 @@ import gernesIcon from "../../assets/imgs/gernesIcon.svg";
 import ReviewStarts from "../../components/ReviewStarts";
 import vinceDirector from "../../assets/imgs/vinceDirector.jpg";
 import bbMusic from "../../assets/imgs/BBMusic.jpeg";
+import { Link, useLocation } from "react-router-dom";
 
 const MovieMoreDets = ({
   releaseYear,
@@ -27,6 +28,9 @@ const MovieMoreDets = ({
     { tagContent: "Drama" },
     { tagContent: "Action" },
   ];
+  const location = useLocation();
+  const {filmCat, filmReleaseDate } =
+    location.state;
   return (
     <div className="movie-details-more">
       <div className="lang-translate">
@@ -38,15 +42,21 @@ const MovieMoreDets = ({
           style={{
             color: "white",
             marginBottom: "20px",
-            fontSize:"1.6rem",
+            fontSize: "1.6rem",
             width: "fit-content",
           }}
         >
-          2023
+          {filmReleaseDate}
         </p>
         <h3 className="titleMoreDets">
+          <img style={{ marginBottom: "5px" }} src={gernesIcon} /> Gernes
+        </h3>
+        <div className="flex" style={{ marginBottom: "20px" }}>
+          <TagsMovieMore tagContent={filmCat} />
+        </div>
+        <h3 className="titleMoreDets">
           <img style={{ marginBottom: "5px" }} src={langIcon} /> Available
-          Languagess
+          Languages
         </h3>
         {/* <TagsMovieMore tagContent="English"/> */}
         <div className="imdb-stream flex" style={{ marginBottom: "20px" }}>
@@ -71,14 +81,6 @@ const MovieMoreDets = ({
       {/*  */}
       {/*  */}
       <div>
-        <h3 className="titleMoreDets">
-          <img style={{ marginBottom: "5px" }} src={gernesIcon} /> Gernes
-        </h3>
-        <div className="flex" style={{ marginBottom: "20px" }}>
-          {tagContentGernesData.map((data, index) => (
-            <TagsMovieMore key={index} tagContent={data.tagContent} />
-          ))}
-        </div>
         <h3 className="titleMoreDets">Director</h3>
         <div className="person-card">
           <img className="person-img" src={vinceDirector} />

@@ -26,7 +26,7 @@ function MoviePage() {
   const castImgsData = [walter, jessy, anna, hank, guss];
   const currentLocation = useLocation();
   const location = useLocation();
-  const { movieTitle, filmImg, filmDuration, filmCat, filmReleaseDate } =
+  const { movieTitle, filmImg, filmDuration, filmCat, filmReleaseDate,filmDesc } =
     location.state;
   const reviewCardData = [
     {
@@ -49,14 +49,14 @@ function MoviePage() {
         <MovieBanner
           backgroundMovieBanner={filmImg}
           titleMovieBanner={movieTitle}
-          descMovieBanner="Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse."
+          descMovieBanner={filmDesc}
         />
         {/* end of movie banner */}
         <div className="flex-movie-dets">
           <div className="movie-det-flex">
             <MovieDesc descMovie="Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse." />
             {/* end of movies desc */}
-            <MovieCast />
+            {/* <MovieCast />  */}
             {/* end of movie cast */}
             <div className="movie-details">
               <div className="btn-review-det">

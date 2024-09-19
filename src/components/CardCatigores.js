@@ -7,6 +7,7 @@ import film17 from "../assets/imgs/film17.jpeg";
 import rightArrow from "../assets/imgs/right-arrow-icon.svg";
 import { useNavigate } from "react-router-dom";
 import movies from "../Data/MoviesData";
+import trendingMovies from "../Data/MoviesData";
 
 const CardCatigores = ({ title, image, sizeCard, showDiv, classNaame }) => {
   const [filteredMovies, setFilteredMovies] = useState([]);
@@ -18,33 +19,48 @@ const CardCatigores = ({ title, image, sizeCard, showDiv, classNaame }) => {
     });
     setFilteredMovies(result);
     navigate("/movies-result", { state: { result } });
+    window.scrollTo(0, 0);
   };
+
+  // const filterTrending = () => {
+  //   const result = trendingMovies.filter(function handleTrendCatigory(movie) {
+  //     return movie.category.includes(title);
+  //   });
+  //   setFilteredMovies(result);
+  //   navigate("/movies-result", { state: { result } });
+  //   window.scrollTo(0, 0);
+  // };
 
   return (
     <>
-      <button onClick={filterCatigory} className="card-catigores-button">
-        <article style={{ width: sizeCard }} className="movies-types-card">
-          <figure className="movies-card-content">
-            <div className="movies-inside-card">
-              <img className="square-film" src={image[0]} />
-              <img className="square-film" src={image[1]} />
-            </div>
-            <div className="movies-inside-card">
-              <img className="square-film" src={image[2]} />
-              <img className="square-film" src={image[3]} />
-            </div>
-          </figure>
-          <div className="catigory-arrow-flex">
-            <div className="flex-trending">
-              {showDiv && <div className={classNaame}>Top 10 In</div>}
-              <h4 className="catirogries-title">{title}</h4>
-            </div>
-            <img src={rightArrow} alt="" />
+      <article
+        onClick={filterCatigory}
+        style={{ width: sizeCard }}
+        className="movies-types-card"
+      >
+        <figure className="movies-card-content">
+          <div className="movies-inside-card">
+            <img className="square-film" src={image[0]} />
+            <img className="square-film" src={image[1]} />
           </div>
-          {/* end of card content */}
-          <div className="shade-card"></div>
-        </article>
-      </button>
+          <div className="movies-inside-card">
+            <img className="square-film" src={image[2]} />
+            <img className="square-film" src={image[3]} />
+          </div>
+        </figure>
+        <div className="catigory-arrow-flex">
+          <div className="flex-trending">
+            {showDiv && <div className={classNaame}>Top 10 In</div>}
+            {/* {showDiv && (
+              <div className="for-trend" onClick={filterTrending}></div>
+            )} */}
+            <h4 className="catirogries-title">{title}</h4>
+          </div>
+          <img src={rightArrow} alt="" />
+        </div>
+        {/* end of card content */}
+        <div className="shade-card"></div>
+      </article>
     </>
   );
 };

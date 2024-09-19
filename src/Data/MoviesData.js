@@ -106,7 +106,7 @@ const movies = [
     image: hungerGamesPoster,
     description:
       "In a dystopian future, Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games, a televised competition in which teenagers fight to the death.",
-    category: "Adventure Sci-Fi",
+    category: "Adventure Sci-fi",
     duration: "2h 22m",
     releaseDate: "2012",
   },
@@ -115,7 +115,7 @@ const movies = [
     image: catchingFirePoster,
     description:
       "Katniss and Peeta become targets of the Capitol after their victory in the 74th Hunger Games sparks rebellion in the Districts of Panem.",
-    category: "Adventure Sci-Fi",
+    category: "Adventure Sci-fi",
     duration: "2h 26m",
     releaseDate: "2013",
   },
@@ -124,7 +124,7 @@ const movies = [
     image: mockingjayPart1Poster,
     description:
       "Katniss becomes the symbol of rebellion against the oppressive Capitol, but the stakes are higher than ever as she fights to liberate Panem.",
-    category: "Adventure/Sci-Fi",
+    category: "Adventure Sci-fi",
     duration: "2h 3m",
     releaseDate: "2014",
   },
@@ -133,7 +133,7 @@ const movies = [
     image: mockingjayPart2Poster,
     description:
       "As the war of Panem escalates to the destruction of other districts by the Capitol, Katniss Everdeen, the reluctant leader of the rebellion, must bring together an army against President Snow.",
-    category: "Adventure/Sci-Fi",
+    category: "Adventure/Sci-fi",
     duration: "2h 17m",
     releaseDate: "2015",
   },
@@ -188,7 +188,7 @@ const movies = [
     image: interstellarPoster,
     description:
       "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 49m",
     releaseDate: "2014",
   },
@@ -305,7 +305,7 @@ const movies = [
     image: bladeRunPoster,
     description:
       "Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 44m",
     releaseDate: "2017",
   },
@@ -431,7 +431,7 @@ const movies = [
     image: clockPoster,
     description:
       "In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 16m",
     releaseDate: "1971",
   },
@@ -530,7 +530,7 @@ const movies = [
     image: donniePoster,
     description:
       "After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a man in a large rabbit suit who manipulates him to commit a series of crimes.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "1h 53m",
     releaseDate: "2001",
   },
@@ -593,7 +593,7 @@ const movies = [
     image: bladeRunnerOldPoster,
     description:
       "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "1h 57m",
     releaseDate: "1982",
   },
@@ -602,7 +602,7 @@ const movies = [
     image: arrivalPoster,
     description:
       "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "1h 56m",
     releaseDate: "2016",
   },
@@ -620,7 +620,7 @@ const movies = [
     image: spacePoster,
     description:
       "After discovering a mysterious artifact buried beneath the lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer HAL 9000.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 29m",
     releaseDate: "1968",
   },
@@ -629,7 +629,7 @@ const movies = [
     image: gravityPoster,
     description:
       "Two astronauts work together to survive after an accident leaves them stranded in space.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "1h 31m",
     releaseDate: "2013",
   },
@@ -638,7 +638,7 @@ const movies = [
     image: extraPoster,
     description:
       "A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "1h 55m",
     releaseDate: "1982",
   },
@@ -665,7 +665,7 @@ export default movies;
 //
 // action movies
 //
-export const topActionMovies = [
+export const trendingMovies = [
   {
     title: "The Dark Knight",
     image: "path/to/darkKnight.jpg",
@@ -756,11 +756,7 @@ export const topActionMovies = [
     duration: "2h 44m",
     releaseDate: "2012",
   },
-];
-//
-// avdventure movies
-//
-export const topAdventureMovies = [
+
   {
     title: "The Lord of the Rings: The Return of the King",
     image: "path/to/returnOfTheKing.jpg",
@@ -851,11 +847,7 @@ export const topAdventureMovies = [
     duration: "2h 1m",
     releaseDate: "1977",
   },
-];
-//
-// drama movies
-//
-export const topDramaMovies = [
+
   {
     title: "The Shawshank Redemption",
     image: "path/to/shawshankRedemption.jpg",
@@ -946,11 +938,7 @@ export const topDramaMovies = [
     duration: "2h 26m",
     releaseDate: "1990",
   },
-];
-//
-// horror movies
-//
-export const topHorrorMovies = [
+
   {
     title: "The Shining",
     image: "path/to/theShining.jpg",
@@ -1041,17 +1029,13 @@ export const topHorrorMovies = [
     duration: "2h 15m",
     releaseDate: "2017",
   },
-];
-//
-// action movies
-//
-export const topSciFiMovies = [
+
   {
     title: "Blade Runner 2049",
     image: "path/to/bladeRunner2049.jpg",
     description:
       "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 44m",
     releaseDate: "2017",
   },
@@ -1060,7 +1044,7 @@ export const topSciFiMovies = [
     image: "path/to/interstellar.jpg",
     description:
       "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 49m",
     releaseDate: "2014",
   },
@@ -1069,7 +1053,7 @@ export const topSciFiMovies = [
     image: "path/to/inception.jpg",
     description:
       "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 28m",
     releaseDate: "2010",
   },
@@ -1078,7 +1062,7 @@ export const topSciFiMovies = [
     image: "path/to/theMatrix.jpg",
     description:
       "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 16m",
     releaseDate: "1999",
   },
@@ -1087,7 +1071,7 @@ export const topSciFiMovies = [
     image: "path/to/theMartian.jpg",
     description:
       "An astronaut becomes stranded on Mars after his team assumes him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 24m",
     releaseDate: "2015",
   },
@@ -1096,7 +1080,7 @@ export const topSciFiMovies = [
     image: "path/to/2001SpaceOdyssey.jpg",
     description:
       "After discovering a mysterious artifact buried beneath the lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer HAL 9000.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 29m",
     releaseDate: "1968",
   },
@@ -1105,7 +1089,7 @@ export const topSciFiMovies = [
     image: "path/to/empireStrikesBack.jpg",
     description:
       "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 4m",
     releaseDate: "1980",
   },
@@ -1114,7 +1098,7 @@ export const topSciFiMovies = [
     image: "path/to/jurassicPark.jpg",
     description:
       "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 7m",
     releaseDate: "1993",
   },
@@ -1123,7 +1107,7 @@ export const topSciFiMovies = [
     image: "path/to/terminator.jpg",
     description:
       "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "1h 47m",
     releaseDate: "1984",
   },
@@ -1132,7 +1116,7 @@ export const topSciFiMovies = [
     image: "path/to/avatar.jpg",
     description:
       "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-    category: "Sci-Fi",
+    category: "Sci-fi",
     duration: "2h 42m",
     releaseDate: "2009",
   },

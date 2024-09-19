@@ -289,15 +289,14 @@
   border-radius: 10px;
   position: relative;
   margin-bottom: 15px;
-  z-index: -1;
+  z-index: -2;
   flex-grow: 1;
   cursor: pointer;
   max-width: 350px;
-  z-index: 1000;
+  z-index: 1;
 }
-.movies-card-result {
-  width: 20px;
-}
+
+
 .movies-types-card {
   width: 245px;
 }
@@ -308,7 +307,12 @@
 }
 .movies-card-result {
   width: 200px;
-  max-width: 200px;
+}
+@media (max-width: 500px) {
+  .movies-card-result{
+    width: 270px;
+    height: 340px;
+  }
 }
 .catirogries-title {
   font-weight: 500;
@@ -617,9 +621,12 @@
   left: 50%;
   transform: translate(-50%);
   position: absolute;
-  z-index: 3;
+  z-index: 1000;
   background-color: #141414;
   border: solid var(--borderColor) 1px;
+}
+.search-container {
+  z-index: 1;
 }
 
 .label-box-search {

@@ -83,8 +83,8 @@
   border: 1px solid #262626;
   position: relative;
   margin-bottom: 120px;
-  /* overflow: auto; */
-  z-index: -4;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .container-movies-shows-content {
   /* to make padding works even in mobile size screens */
@@ -98,8 +98,7 @@
   z-index: -3;
   pointer-events: none;
 }
-@media (max-width: 600px) {
-}
+
 @media (max-width: 776px) {
   .container-movies-shows {
     display: contents;
@@ -165,4 +164,13 @@
   left: 50%;
   transform: translate(-50%);
   width: 100%;
+}
+
+.for-trend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max-content;
+  height: max-content;
+  z-index: 3;
 }

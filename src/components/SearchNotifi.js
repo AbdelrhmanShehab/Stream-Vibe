@@ -21,10 +21,11 @@ function SearchNotifi() {
 
   const performSearch = () => {
     const result = movies.filter((movie) =>
-      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+      movie.title.toLowerCase().startsWith(searchTerm.toLowerCase())
     );
     setFilteredMovies(result);
-    navigate("/movies-result", { state: { result } }); 
+    setVisibleSearch(false);
+    navigate("/movies-result", { state: { result } });
   };
 
   return (

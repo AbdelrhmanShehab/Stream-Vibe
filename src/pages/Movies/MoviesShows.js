@@ -7,7 +7,7 @@ import CardCatigores from "../../components/CardCatigores";
 import CardFilm from "../../components/CardFilm";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import movies from "../../Data/MoviesData";
 // import images
 import film1 from "../../assets/imgs/film1.jpg";
@@ -219,132 +219,131 @@ function MoviesShows() {
       <main className="main-container-home2">
         <BannerMovie />
         <div className="container-movies-shows">
-          <div className="container-movies-shows-content">
-            <div className="red-catig center-flex">Movies</div>
+          <div className="red-catig center-flex">Movies</div>
 
-            <div className="flexSlider">
-              <div className="title-movies">
-                <HeaderDesc className="" title="Our Genres" />
-              </div>
-              <SliderCatigores />
+          <div className="flexSlider">
+            <div className="title-movies">
+              <HeaderDesc className="" title="Our Genres" />
             </div>
+            <SliderCatigores />
+          </div>
 
-            <div className="scroll-container">
-              <div className="flexCardsMoviesPage">
-                {cardCatigoresData.map((data, index) => (
-                  <CardCatigores
-                    key={index}
-                    title={data.title}
-                    image={data.image}
-                    sizeCard={data.sizeCard}
-                  />
-                ))}
-              </div>
-            </div>
-            <div className="flexSlider">
-              <div className="title-movies">
-                <HeaderDesc className="" title="Popular 10 In Geners" />
-              </div>
-              <SliderCatigores />
-            </div>
-            <div className="scroll-container">
-              <div className="flexCardsMoviesPage">
-                {popularCardCatigoresData.map((data, index) => (
-                  <CardCatigores
-                    key={index}
-                    showDiv={true}
-                    classNaame="red-trending show-hide"
-                    title={data.title}
-                    image={data.image}
-                    sizeCard={data.sizeCard}
-                  />
-                ))}
-              </div>
-            </div>
-            {/* end of popular movies */}
-            <div className="flexSlider">
-              <div className="title-movies">
-                <HeaderDesc className="" title="Trending Now" />
-              </div>
-              <SliderCatigores />
-            </div>
-            <div className="scroll-container">
-              <div className="flexCardsMoviesPage">
-                {trendingFilmsCardData.map((data, index) => (
-                  <CardFilm
-                    key={index}
-                    showDiv={true}
-                    classNameDuiration="duiration-film active"
-                    classNameSeasons="duiration-film active"
-                    classNameRelease="release-film "
-                    classNameRating="duiration-film  "
-                    widthSizeCard={data.widthSizeCard}
-                    heightSizeCard={data.heightSizeCard}
-                    filmImg={data.filmImg}
-                    filmDuiration={data.filmDuiration}
-                    filmViews={data.filmViews}
-                    releaseDate={data.releaseDate}
-                  />
-                ))}
-              </div>
-            </div>
-            {/* end of trending movies */}
-            <div className="flexSlider">
-              <div className="title-movies">
-                <HeaderDesc className="" title="New Releases" />
-              </div>
-              <SliderCatigores />
-            </div>
-            <div className="scroll-container">
-              <div className="flexCardsMoviesPage">
-                {releaseFilmCardData.map((data, index) => (
-                  <CardFilm
-                    key={index}
-                    showDiv={true}
-                    classNameDuiration="duiration-film "
-                    classNameSeasons="duiration-film "
-                    classNameRelease="release-film active "
-                    classNameRating="duiration-film  "
-                    widthSizeCard={data.widthSizeCard}
-                    heightSizeCard={data.heightSizeCard}
-                    filmImg={data.filmImg}
-                    filmDuiration={data.filmDuiration}
-                    filmViews={data.filmViews}
-                    releaseDate={data.releaseDate}
-                  />
-                ))}
-              </div>
-            </div>
-            {/* end of release movies */}
-            <div className="flexSlider">
-              <div className="title-movies">
-                <HeaderDesc className="" title="Must - Watch Movies" />
-              </div>
-              <SliderCatigores />
-            </div>
-            <div className="scroll-container">
-              <div className="flexCardsMoviesPage">
-                {ratingFilmCardData.map((data, index) => (
-                  <CardFilm
-                    key={index}
-                    showDiv={true}
-                    classNameDuiration="duiration-film active "
-                    classNameSeasons="duiration-film "
-                    classNameRelease="release-film  "
-                    classNameRating="duiration-film active "
-                    widthSizeCard={data.widthSizeCard}
-                    heightSizeCard={data.heightSizeCard}
-                    filmImg={data.filmImg}
-                    filmDuiration={data.filmDuiration}
-                    filmViews={data.filmViews}
-                    releaseDate={data.releaseDate}
-                  />
-                ))}
-              </div>
+          <div className="scroll-container">
+            <div className="flexCardsMoviesPage">
+              {cardCatigoresData.map((data, index) => (
+                <CardCatigores
+                  key={index}
+                  title={data.title}
+                  image={data.image}
+                  sizeCard={data.sizeCard}
+                />
+              ))}
             </div>
           </div>
-          {/* end of movies content */}
+          <div className="flexSlider">
+            <div className="title-movies">
+              <HeaderDesc className="" title="Popular 10 In Geners" />
+            </div>
+            <SliderCatigores />
+          </div>
+          <div className="scroll-container">
+            <div className="flexCardsMoviesPage">
+              {popularCardCatigoresData.map((data, index) => (
+                <CardCatigores
+                  key={index}
+                  showDiv={true}
+                  classNaame="red-trending show-hide"
+                  title={data.title}
+                  image={data.image}
+                  sizeCard={data.sizeCard}
+                />
+              ))}
+            </div>
+          </div>
+          {/* end of popular movies */}
+          <div className="flexSlider">
+            <div className="title-movies">
+              <HeaderDesc className="" title="Trending Now" />
+            </div>
+            <SliderCatigores />
+          </div>
+          <div className="scroll-container">
+            <div className="flexCardsMoviesPage">
+              {trendingFilmsCardData.map((data, index) => (
+                <CardFilm
+                  key={index}
+                  showDiv={true}
+                  classNameDuiration="duiration-film active"
+                  classNameSeasons="duiration-film active"
+                  classNameRelease="release-film "
+                  classNameRating="duiration-film  "
+                  widthSizeCard={data.widthSizeCard}
+                  heightSizeCard={data.heightSizeCard}
+                  filmImg={data.filmImg}
+                  filmDuiration={data.filmDuiration}
+                  filmViews={data.filmViews}
+                  releaseDate={data.releaseDate}
+                />
+              ))}
+            </div>
+          </div>
+          {/* end of trending movies */}
+          <div className="flexSlider">
+            <div className="title-movies">
+              <HeaderDesc className="" title="New Releases" />
+            </div>
+            <SliderCatigores />
+          </div>
+          <div className="scroll-container">
+            <div className="flexCardsMoviesPage">
+              {releaseFilmCardData.map((data, index) => (
+                <CardFilm
+                  key={index}
+                  showDiv={true}
+                  classNameDuiration="duiration-film "
+                  classNameSeasons="duiration-film "
+                  classNameRelease="release-film active "
+                  classNameRating="duiration-film  "
+                  widthSizeCard={data.widthSizeCard}
+                  heightSizeCard={data.heightSizeCard}
+                  filmImg={data.filmImg}
+                  filmDuiration={data.filmDuiration}
+                  filmViews={data.filmViews}
+                  releaseDate={data.releaseDate}
+                />
+              ))}
+            </div>
+          </div>
+          {/* end of release movies */}
+          <div className="flexSlider">
+            <div className="title-movies">
+              <HeaderDesc className="" title="Must - Watch Movies" />
+            </div>
+            <SliderCatigores />
+          </div>
+          <div className="scroll-container">
+            <div className="flexCardsMoviesPage">
+              {ratingFilmCardData.map((data, index) => (
+                <CardFilm
+                  key={index}
+                  showDiv={true}
+                  classNameDuiration="duiration-film active "
+                  classNameSeasons="duiration-film "
+                  classNameRelease="release-film  "
+                  classNameRating="duiration-film active "
+                  widthSizeCard={data.widthSizeCard}
+                  heightSizeCard={data.heightSizeCard}
+                  filmImg={data.filmImg}
+                  filmDuiration={data.filmDuiration}
+                  filmViews={data.filmViews}
+                  releaseDate={data.releaseDate}
+                />
+              ))}
+            </div>
+          </div>
         </div>
+        {/* end of movies content */}
+
         {/* end of movies container */}
         <FreeTrialBanner />
       </main>

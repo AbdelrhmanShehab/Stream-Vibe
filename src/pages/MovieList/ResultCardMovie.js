@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const ResaultCardMovie = ({
   movieTitle,
   filmImg,
+  filmDesc,
   filmDuration,
   filmCat,
   filmReleaseDate,
@@ -21,16 +22,17 @@ const ResaultCardMovie = ({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    // Pass the movie data as state when navigating
     navigate("/movie", {
       state: {
         movieTitle,
         filmImg,
+        filmDesc,
         filmDuration,
         filmCat,
         filmReleaseDate,
       },
     });
+    window.scrollTo(0, 0);
   };
   const shortendTitle = handleLongTitle(movieTitle);
 
