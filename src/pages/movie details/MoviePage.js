@@ -14,20 +14,20 @@ import MovieBanner from "./MovieBanner";
 import { Link, useLocation } from "react-router-dom";
 
 // photos import
-import walter from "../../assets/imgs/walterWhite.jpg";
-import jessy from "../../assets/imgs/jessy.jpg";
-import hank from "../../assets/imgs/hank.jpg";
-import anna from "../../assets/imgs/annaGunn.jpg";
-import guss from "../../assets/imgs/gusssFreng.jpg";
 import leftArrow from "../../assets/imgs/left-arrow-icon.svg";
 import rightArrow from "../../assets/imgs/right-arrow-icon.svg";
 
 function MoviePage() {
-  const castImgsData = [walter, jessy, anna, hank, guss];
   const currentLocation = useLocation();
   const location = useLocation();
-  const { movieTitle, filmImg, filmDuration, filmCat, filmReleaseDate,filmDesc } =
-    location.state;
+  const {
+    movieTitle,
+    filmImg,
+    filmDesc,
+    filmDuration,
+    filmCat,
+    filmReleaseDate,
+  } = location.state;
   const reviewCardData = [
     {
       reviewOwner: "Abdelrhman",
@@ -47,14 +47,14 @@ function MoviePage() {
       {currentLocation.pathname === "/movie" && <Header />}
       <div className="main-container-home2">
         <MovieBanner
-          backgroundMovieBanner={filmImg}
           titleMovieBanner={movieTitle}
+          backgroundMovieBanner={filmImg}
           descMovieBanner={filmDesc}
         />
         {/* end of movie banner */}
         <div className="flex-movie-dets">
           <div className="movie-det-flex">
-            <MovieDesc descMovie="Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse." />
+            <MovieDesc descMovie={filmDesc} />
             {/* end of movies desc */}
             {/* <MovieCast />  */}
             {/* end of movie cast */}

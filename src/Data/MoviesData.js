@@ -64,6 +64,42 @@ import catchingFirePoster from "../assets/imgs/catshingFire.webp";
 import mockingjayPart1Poster from "../assets/imgs/MockingjayPart 1.webp";
 import mockingjayPart2Poster from "../assets/imgs/MockingjayPart2.webp";
 import theMegPoster from "../assets/imgs/meg.webp";
+import darkKNight from "../assets/imgs/darkKnight.webp";
+import trendAngryMan from "../assets/imgs/trendAngryMan.jpg";
+import trendAvatar from "../assets/imgs/trendAvatar.jpg";
+import trendAvengers from "../assets/imgs/trendAvengers.jpg";
+import trendBladeRunner from "../assets/imgs/trendBladeRunner.jpg";
+import trendDieHard from "../assets/imgs/trendDieHard.jpg";
+import trendFightClub from "../assets/imgs/trendFightClub.jpg";
+import trendForestGump from "../assets/imgs/trendForestGump.jpg";
+import trendGladiator from "../assets/imgs/trendGladiator.jpg";
+import trendGodfather from "../assets/imgs/trendGodfather.jpg";
+import trendGoodFellas from "../assets/imgs/trendGoodFellas.jpg";
+import trendGoonies from "../assets/imgs/trendGoonies.png";
+import trendGreenMile from "../assets/imgs/trendGreenMile.jpg";
+import trendInception from "../assets/imgs/trendInception.jpg";
+import trendIndiana from "../assets/imgs/trendIndiana.png";
+import trendInter from "../assets/imgs/trendInter.jpg";
+import trendJurassic from "../assets/imgs/trendJurassic.jpg";
+import trendLionKing from "../assets/imgs/trendLionKing.jpg";
+import trendLord from "../assets/imgs/trendLord.jpg";
+import trendLordTwo from "../assets/imgs/trendLordTwo.jpg";
+import trendLordThree from "../assets/imgs/trendLordThree.jpg";
+import trendMadMax from "../assets/imgs/trendMadMax.jpg";
+import trendMartian from "../assets/imgs/trendMartian.jpg";
+import trendMatrix from "../assets/imgs/trendMatrix.jpg";
+import trendOneFlew from "../assets/imgs/trendOneFlew.jpg";
+import trendPirates from "../assets/imgs/trendPirates.jpg";
+import trendShawshank from "../assets/imgs/trendShawshank.jpg";
+import trendSpaceOdyssey from "../assets/imgs/trendSpaceOdyssey.jpg";
+import trendStarWars from "../assets/imgs/trendStarWars.jpg";
+import trendTerm from "../assets/imgs/trendTerm.jpg";
+import trendTheShining from "../assets/imgs/trendTheShining.jpg";
+import horror1 from "../assets/imgs/horror1.jpg";
+import horror2 from "../assets/imgs/horror2.jpeg";
+import horror3 from "../assets/imgs/horror3.jpg";
+import horror4 from "../assets/imgs/horror4.jpg";
+import horror5 from "../assets/imgs/horrorNight.webp";
 const movies = [
   {
     title: "Kill Bill: Vol. 1",
@@ -663,461 +699,518 @@ const movies = [
 ];
 export default movies;
 //
-// action movies
+// trending movies
 //
 export const trendingMovies = [
   {
-    title: "The Dark Knight",
-    image: "path/to/darkKnight.jpg",
+    title: "2013: The Dark Knight",
+    image: darkKNight,
     description:
       "Batman faces his greatest psychological and physical tests as he battles the Joker.",
     category: "Action",
     duration: "2h 32m",
     releaseDate: "2008",
+    order: "1",
   },
   {
     title: "Inception",
-    image: "path/to/inception.jpg",
+    image: trendInception,
     description:
       "A thief who steals corporate secrets through dream-sharing technology is given a task of inception.",
     category: "Action",
     duration: "2h 28m",
     releaseDate: "2010",
+    order: "2",
   },
   {
     title: "The Matrix",
-    image: "path/to/matrix.jpg",
+    image: trendMatrix,
     description:
       "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.",
     category: "Action",
     duration: "2h 16m",
     releaseDate: "1999",
+    order: "3",
   },
   {
     title: "Gladiator",
-    image: "path/to/gladiator.jpg",
+    image: trendGladiator,
     description:
       "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family.",
     category: "Action",
     duration: "2h 35m",
     releaseDate: "2000",
+    order: "4",
   },
   {
     title: "Mad Max: Fury Road",
-    image: "path/to/madMaxFuryRoad.jpg",
+    image: trendMadMax,
     description:
       "In a post-apocalyptic wasteland, Max helps a rebellious woman escape a tyrant.",
     category: "Action",
     duration: "2h",
     releaseDate: "2015",
+    order: "5",
   },
   {
     title: "Die Hard",
-    image: "path/to/dieHard.jpg",
+    image: trendDieHard,
     description:
       "An NYPD officer tries to save his wife and others taken hostage by terrorists during a Christmas party.",
     category: "Action",
     duration: "2h 12m",
     releaseDate: "1988",
+    order: "6",
   },
   {
     title: "The Avengers",
-    image: "path/to/avengers.jpg",
+    image: trendAvengers,
     description:
       "Earth's mightiest heroes must come together to stop Loki and his alien army from enslaving humanity.",
     category: "Action",
     duration: "2h 23m",
     releaseDate: "2012",
+    order: "7",
   },
   {
     title: "Terminator 2: Judgment Day",
-    image: "path/to/terminator2.jpg",
+    image: trendTerm,
     description:
       "A cyborg, identical to the one who failed to kill Sarah Connor, is sent back in time to protect her son.",
     category: "Action",
     duration: "2h 17m",
     releaseDate: "1991",
+    order: "8",
   },
   {
     title: "The Lord of the Rings: The Return of the King",
-    image: "path/to/returnOfTheKing.jpg",
+    image: trendLord,
     description:
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam.",
     category: "Action",
     duration: "3h 21m",
     releaseDate: "2003",
+    order: "9",
   },
   {
     title: "The Dark Knight Rises",
-    image: "path/to/darkKnightRises.jpg",
+    image: darkKNight,
     description:
       "Eight years after the Joker's reign of anarchy, Batman is forced out of hiding by the arrival of Bane.",
     category: "Action",
     duration: "2h 44m",
     releaseDate: "2012",
+    order: "10",
   },
 
   {
     title: "The Lord of the Rings: The Return of the King",
-    image: "path/to/returnOfTheKing.jpg",
+    image: trendLord,
     description:
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam.",
     category: "Adventure",
     duration: "3h 21m",
     releaseDate: "2003",
+    order: "1",
   },
   {
     title: "The Lord of the Rings: The Fellowship of the Ring",
-    image: "path/to/fellowshipOfTheRing.jpg",
+    image: trendLordTwo,
     description:
       "A meek Hobbit and eight companions set out on a journey to destroy a powerful ring and save Middle-earth.",
     category: "Adventure",
     duration: "2h 58m",
     releaseDate: "2001",
+    order: "2",
   },
   {
     title: "The Lord of the Rings: The Two Towers",
-    image: "path/to/twoTowers.jpg",
+    image: trendLordThree,
     description:
       "While Frodo and Sam edge closer to Mordor with the help of Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
     category: "Adventure",
     duration: "2h 59m",
     releaseDate: "2002",
+    order: "3",
   },
   {
     title: "Indiana Jones and the Raiders of the Lost Ark",
-    image: "path/to/raidersOfTheLostArk.jpg",
+    image: trendIndiana,
     description:
       "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis can obtain its awesome powers.",
     category: "Adventure",
     duration: "1h 55m",
     releaseDate: "1981",
+    order: "4",
   },
   {
     title: "The Lion King",
-    image: "path/to/lionKing.jpg",
+    image: trendLionKing,
     description:
       "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.",
     category: "Adventure",
     duration: "1h 28m",
     releaseDate: "1994",
+    order: "5",
   },
   {
     title: "Avatar",
-    image: "path/to/avatar.jpg",
+    image: trendAvatar,
     description:
       "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
     category: "Adventure",
     duration: "2h 42m",
-    releaseDate: "2009",
+    releaseDate: "2009",filmReleaseDate: "16 October 2023",
+      movieTitle: "The Batman",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+    
+    order: "6",
   },
   {
     title: "Jurassic Park",
-    image: "path/to/jurassicPark.jpg",
+    image: trendJurassic,
     description:
       "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
     category: "Adventure",
     duration: "2h 7m",
     releaseDate: "1993",
+    order: "7",
   },
   {
     title: "The Goonies",
-    image: "path/to/goonies.jpg",
+    image: trendGoonies,
     description:
       "A group of young misfits discover an ancient map and set out on a quest to find a legendary pirate's long-lost treasure.",
     category: "Adventure",
     duration: "1h 54m",
     releaseDate: "1985",
+    order: "8",
   },
   {
     title: "Pirates of the Caribbean: The Curse of the Black Pearl",
-    image: "path/to/piratesOfTheCaribbean.jpg",
+    image: trendPirates,
     description:
       "Blacksmith Will Turner teams up with eccentric pirate 'Captain' Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
     category: "Adventure",
     duration: "2h 23m",
     releaseDate: "2003",
+    order: "9",
   },
   {
     title: "Star Wars: Episode IV - A New Hope",
-    image: "path/to/starWarsANewHope.jpg",
+    image: trendStarWars,
     description:
       "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee, and two droids to save the galaxy from the Empire's world-destroying battle station while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
     category: "Adventure",
     duration: "2h 1m",
     releaseDate: "1977",
+    order: "10",
   },
 
   {
     title: "The Shawshank Redemption",
-    image: "path/to/shawshankRedemption.jpg",
+    image: trendShawshank,
     description:
       "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
     category: "Drama",
     duration: "2h 22m",
     releaseDate: "1994",
+    order: "1",
   },
   {
     title: "The Godfather",
-    image: "path/to/godfather.jpg",
+    image: trendGodfather,
     description:
       "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
     category: "Drama",
     duration: "2h 55m",
     releaseDate: "1972",
+    order: "2",
   },
   {
     title: "12 Angry Men",
-    image: "path/to/12AngryMen.jpg",
+    image: trendAngryMan,
     description:
       "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
     category: "Drama",
     duration: "1h 36m",
     releaseDate: "1957",
+    order: "3",
   },
   {
     title: "Schindler's List",
-    image: "path/to/schindlersList.jpg",
+    image: trendAvatar,
     description:
       "In German-occupied Poland during World War II, Oskar Schindler becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
     category: "Drama",
     duration: "3h 15m",
     releaseDate: "1993",
+    order: "4",
   },
   {
     title: "Forrest Gump",
-    image: "path/to/forrestGump.jpg",
+    image: trendForestGump,
     description:
       "The presidencies of Kennedy and Johnson, the Vietnam War, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.",
     category: "Drama",
     duration: "2h 22m",
     releaseDate: "1994",
+    order: "5",
   },
   {
     title: "Fight Club",
-    image: "path/to/fightClub.jpg",
+    image: trendFightClub,
     description:
       "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much more.",
     category: "Drama",
     duration: "2h 19m",
     releaseDate: "1999",
+    order: "6",
   },
   {
     title: "The Godfather: Part II",
-    image: "path/to/godfatherPart2.jpg",
+    image: trendGodfather,
     description:
       "The early life and career of Vito Corleone in 1920s New York City is portrayed while his son, Michael, expands and tightens his grip on the family crime syndicate.",
     category: "Drama",
     duration: "3h 22m",
     releaseDate: "1974",
+    order: "7",
   },
   {
     title: "The Green Mile",
-    image: "path/to/greenMile.jpg",
+    image: trendGreenMile,
     description:
       "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
     category: "Drama",
     duration: "3h 9m",
     releaseDate: "1999",
+    order: "8",
   },
   {
     title: "One Flew Over the Cuckoo's Nest",
-    image: "path/to/oneFlewOver.jpg",
+    image: trendOneFlew,
     description:
       "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.",
     category: "Drama",
     duration: "2h 13m",
     releaseDate: "1975",
+    order: "9",
   },
   {
     title: "Goodfellas",
-    image: "path/to/goodfellas.jpg",
+    image: trendGoodFellas,
     description:
       "The story of Henry Hill and his life in the mob, covering his relationship with his wife and his partners in crime.",
     category: "Drama",
     duration: "2h 26m",
     releaseDate: "1990",
+    order: "10",
   },
 
   {
     title: "The Shining",
-    image: "path/to/theShining.jpg",
+    image: trendTheShining,
     description:
       "A family heads to an isolated hotel where an evil presence drives the father into violence.",
     category: "Horror",
     duration: "2h 26m",
     releaseDate: "1980",
+    order: "1",
   },
   {
     title: "Psycho",
-    image: "path/to/psycho.jpg",
+    image: horror3,
     description:
       "A secretary embezzles money and checks into a remote motel run by a young man under the domination of his mother.",
     category: "Horror",
     duration: "1h 49m",
     releaseDate: "1960",
+    order: "2",
   },
   {
     title: "The Exorcist",
-    image: "path/to/theExorcist.jpg",
+    image: horror2,
     description:
       "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests.",
     category: "Horror",
     duration: "2h 12m",
     releaseDate: "1973",
+    order: "3",
   },
   {
     title: "Get Out",
-    image: "path/to/getOut.jpg",
+    image: horror4,
     description:
       "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness leads to a shocking truth.",
     category: "Horror",
     duration: "1h 44m",
     releaseDate: "2017",
+    order: "4",
   },
   {
     title: "Hereditary",
-    image: "path/to/hereditary.jpg",
+    image: horror1,
     description:
       "A grieving family is haunted by tragic and disturbing occurrences.",
     category: "Horror",
     duration: "2h 7m",
     releaseDate: "2018",
+    order: "5",
   },
   {
     title: "A Nightmare on Elm Street",
-    image: "path/to/nightmareOnElmStreet.jpg",
+    image: horror5,
     description:
       "Teenagers are stalked and killed by the mysterious Freddy Krueger in their dreams.",
     category: "Horror",
     duration: "1h 31m",
     releaseDate: "1984",
+    order: "6",
   },
   {
     title: "Halloween",
-    image: "path/to/halloween.jpg",
+    image: horror4,
     description:
       "Fifteen years after murdering his sister, Michael Myers escapes and returns to his hometown.",
     category: "Horror",
     duration: "1h 31m",
     releaseDate: "1978",
+    order: "7",
   },
   {
     title: "The Conjuring",
-    image: "path/to/theConjuring.jpg",
+    image: horror3,
     description:
       "Paranormal investigators help a family terrorized by a dark presence in their farmhouse.",
     category: "Horror",
     duration: "1h 52m",
     releaseDate: "2013",
+    order: "8",
   },
   {
     title: "The Texas Chain Saw Massacre",
-    image: "path/to/texasChainsaw.jpg",
+    image: horror1,
     description:
       "Five friends face a nightmare as they are hunted by a chainsaw-wielding maniac and his family.",
     category: "Horror",
     duration: "1h 23m",
     releaseDate: "1974",
+    order: "9",
   },
   {
     title: "It",
-    image: "path/to/it.jpg",
+    image: horror2,
     description:
       "A group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the town's children.",
     category: "Horror",
     duration: "2h 15m",
     releaseDate: "2017",
+    order: "10",
   },
 
   {
     title: "Blade Runner 2049",
-    image: "path/to/bladeRunner2049.jpg",
+    image: trendBladeRunner,
     description:
       "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
     category: "Sci-fi",
     duration: "2h 44m",
     releaseDate: "2017",
+    order: "1",
   },
   {
     title: "Interstellar",
-    image: "path/to/interstellar.jpg",
+    image: trendInter,
     description:
       "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
     category: "Sci-fi",
     duration: "2h 49m",
     releaseDate: "2014",
+    order: "2",
   },
   {
     title: "Inception",
-    image: "path/to/inception.jpg",
+    image: trendInception,
     description:
       "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
     category: "Sci-fi",
     duration: "2h 28m",
     releaseDate: "2010",
+    order: "3",
   },
   {
     title: "The Matrix",
-    image: "path/to/theMatrix.jpg",
+    image: trendMatrix,
     description:
       "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
     category: "Sci-fi",
     duration: "2h 16m",
     releaseDate: "1999",
+    order: "4",
   },
   {
     title: "The Martian",
-    image: "path/to/theMartian.jpg",
+    image: trendMartian,
     description:
       "An astronaut becomes stranded on Mars after his team assumes him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
     category: "Sci-fi",
     duration: "2h 24m",
     releaseDate: "2015",
+    order: "5",
   },
   {
     title: "2001: A Space Odyssey",
-    image: "path/to/2001SpaceOdyssey.jpg",
+    image: trendSpaceOdyssey,
     description:
       "After discovering a mysterious artifact buried beneath the lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer HAL 9000.",
     category: "Sci-fi",
     duration: "2h 29m",
     releaseDate: "1968",
+    order: "6",
   },
   {
     title: "Star Wars: Episode V - The Empire Strikes Back",
-    image: "path/to/empireStrikesBack.jpg",
+    image: trendStarWars,
     description:
       "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.",
     category: "Sci-fi",
     duration: "2h 4m",
     releaseDate: "1980",
+    order: "7",
   },
   {
     title: "Jurassic Park",
-    image: "path/to/jurassicPark.jpg",
+    image: trendJurassic,
     description:
       "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
     category: "Sci-fi",
     duration: "2h 7m",
     releaseDate: "1993",
+    order: "8",
   },
   {
     title: "The Terminator",
-    image: "path/to/terminator.jpg",
+    image: trendTerm,
     description:
       "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
     category: "Sci-fi",
     duration: "1h 47m",
     releaseDate: "1984",
+    order: "9",
   },
   {
     title: "Avatar",
-    image: "path/to/avatar.jpg",
+    image: trendAvatar,
     description:
       "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
     category: "Sci-fi",
     duration: "2h 42m",
     releaseDate: "2009",
+    order: "10",
   },
 ];

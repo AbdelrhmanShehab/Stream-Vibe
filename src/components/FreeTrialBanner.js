@@ -1,7 +1,6 @@
 import React from "react";
 import MainBtn from "./MainBtn";
 import PhotoBanner from "./PhotoBanner";
-import PhotoRow from "./PhotosRow";
 // import images
 import film1 from "../assets/imgs/film1.jpg";
 import film2 from "../assets/imgs/film2.jpeg";

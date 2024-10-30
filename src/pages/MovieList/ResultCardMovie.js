@@ -37,23 +37,27 @@ const ResaultCardMovie = ({
   const shortendTitle = handleLongTitle(movieTitle);
 
   return (
-    <article className="movies-card-result" onClick={handleClick}>
-      <img className="film-img-card" src={filmImg} alt={movieTitle} />
-      <div className="flex-duiration-seasion">
-        <div className="duiration-one-film flex">
-          <img src={clockIcon} alt="Clock Icon" />
-          <p style={{ fontSize: "1.3rem", color: "gray" }}>{filmDuration}</p>
+    <>
+      <article
+        className="movies-card-result"
+        popovertrager="modal"
+        onClick={handleClick}
+      >
+        <img className="film-img-card" src={filmImg} alt={movieTitle} />
+        <div className="flex-duiration-seasion">
+          <div className="duiration-one-film flex">
+            <img src={clockIcon} alt="Clock Icon" />
+            <p style={{ fontSize: "1.3rem", color: "gray" }}>{filmDuration}</p>
+          </div>
         </div>
-      </div>
-      <div className="film-title-cat-result">
-        <h2 className="film-title-result" data-full-title={movieTitle}>
-          {shortendTitle}
-        </h2>
-        <p>
-          {filmCat} <span>.</span> {filmReleaseDate}
-        </p>
-      </div>
-    </article>
+        <div className="film-title-cat-result">
+          <h2 className="film-title-result">{shortendTitle}</h2>
+          <p>
+            {filmCat} <span>.</span> {filmReleaseDate}
+          </p>
+        </div>
+      </article>
+    </>
   );
 };
 

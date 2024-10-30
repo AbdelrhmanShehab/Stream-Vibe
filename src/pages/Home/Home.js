@@ -15,6 +15,8 @@ import Toggle from "../../components/Toggle";
 import FreeTrialBanner from "../../components/FreeTrialBanner";
 import Footer from "../../components/Footer";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 // import images
 import film3 from "../../assets/imgs/film3.jpg";
 import film4 from "../../assets/imgs/film4.jpg";
@@ -58,7 +60,7 @@ function Home() {
       image: [adv1, adv2, adv3, adv4],
     },
     {
-      title: "Sci-Fi",
+      title: "Sci-fi",
       image: [sifi1, sifi2, sifi3, film6],
     },
     {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import movies from "../Data/MoviesData";
 import searchIcon from "../assets/imgs/search-icon.svg";
@@ -9,7 +9,8 @@ function SearchNotifi() {
   const [isVisibleSearch, setVisibleSearch] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredMovies, setFilteredMovies] = useState([]);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const searchRef = useRef(null);
+  const navigate = useNavigate();
 
   function popSearchBar() {
     setVisibleSearch(!isVisibleSearch);
@@ -28,12 +29,25 @@ function SearchNotifi() {
     navigate("/movies-result", { state: { result } });
   };
 
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setVisibleSearch(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [searchRef]);
+
   return (
     <>
       {isVisibleSearch && (
         <div className="search-container">
           <div className="fade-for-search"></div>
-          <div className="search-box">
+          <div className="search-box" ref={searchRef}>
             <div className="label-textbox">
               <label className="label-box-search">Search for a movie</label>
               <input

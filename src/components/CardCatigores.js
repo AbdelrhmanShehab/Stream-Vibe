@@ -1,67 +1,47 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import "./components.css";
-import film4 from "../assets/imgs/film4.jpg";
-import film12 from "../assets/imgs/film12.jpg";
-import film10 from "../assets/imgs/film10.jpg";
-import film17 from "../assets/imgs/film17.jpeg";
-import rightArrow from "../assets/imgs/right-arrow-icon.svg";
 import { useNavigate } from "react-router-dom";
 import movies from "../Data/MoviesData";
-import trendingMovies from "../Data/MoviesData";
+import arrow from "../assets/imgs/right-arrow-icon.svg";
 
 const CardCatigores = ({ title, image, sizeCard, showDiv, classNaame }) => {
-  const [filteredMovies, setFilteredMovies] = useState([]);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const filterCatigory = () => {
-    const result = movies.filter(function handleCatigory(movie) {
-      return movie.category.includes(title);
+    navigate("/trending-movies", {
+      state: {
+        title,
+      },
     });
-    setFilteredMovies(result);
-    navigate("/movies-result", { state: { result } });
     window.scrollTo(0, 0);
   };
 
-  // const filterTrending = () => {
-  //   const result = trendingMovies.filter(function handleTrendCatigory(movie) {
-  //     return movie.category.includes(title);
-  //   });
-  //   setFilteredMovies(result);
-  //   navigate("/movies-result", { state: { result } });
-  //   window.scrollTo(0, 0);
-  // };
-
   return (
-    <>
-      <article
-        onClick={filterCatigory}
-        style={{ width: sizeCard }}
-        className="movies-types-card"
-      >
-        <figure className="movies-card-content">
-          <div className="movies-inside-card">
-            <img className="square-film" src={image[0]} />
-            <img className="square-film" src={image[1]} />
-          </div>
-          <div className="movies-inside-card">
-            <img className="square-film" src={image[2]} />
-            <img className="square-film" src={image[3]} />
-          </div>
-        </figure>
-        <div className="catigory-arrow-flex">
-          <div className="flex-trending">
-            {showDiv && <div className={classNaame}>Top 10 In</div>}
-            {/* {showDiv && (
-              <div className="for-trend" onClick={filterTrending}></div>
-            )} */}
-            <h4 className="catirogries-title">{title}</h4>
-          </div>
-          <img src={rightArrow} alt="" />
+    <article
+      onClick={filterCatigory}
+      style={{ width: sizeCard }}
+      className="movies-types-card"
+    >
+      {/* Card content and styling */}
+      <figure className="movies-card-content">
+        <div className="movies-inside-card">
+          <img className="square-film" src={image[0]} alt="film image 1" />
+          <img className="square-film" src={image[1]} alt="film image 2" />
         </div>
-        {/* end of card content */}
-        <div className="shade-card"></div>
-      </article>
-    </>
+        <div className="movies-inside-card">
+          <img className="square-film" src={image[2]} alt="film image 3" />
+          <img className="square-film" src={image[3]} alt="film image 4" />
+        </div>
+      </figure>
+      <div className="catigory-arrow-flex">
+        <div className="flex-trending">
+          {showDiv && <div className={classNaame}>Top 10 In</div>}
+          <h4 className="catirogries-title">{title}</h4>
+        </div>
+        <img src={arrow} alt="arrow icon" />
+      </div>
+    </article>
   );
 };
+
 export default CardCatigores;

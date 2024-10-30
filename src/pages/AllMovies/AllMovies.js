@@ -25,6 +25,7 @@ const AllMovies = () => {
               <ResultCardMovie
                 movieTitle={movie.title}
                 filmImg={movie.image}
+                filmDesc={movie.description}
                 filmDuration={movie.duration}
                 filmCat={movie.category}
                 filmReleaseDate={movie.releaseDate}

@@ -7,6 +7,7 @@ import Subscriptions from "./pages/Subscriptions/Subscriptions";
 import MoviePage from "./pages/movie details/MoviePage";
 import MovieList from "./pages/MovieList/MovieList";
 import AllMovies from "./pages/AllMovies/AllMovies";
+import TrendingMovies from "./pages/Trending Movies/TrendingMovies";
 import { Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/movie" element={<MoviePage />} />;
         <Route path="/movies-result" element={<MovieList />} />;
         <Route path="/all-movies" element={<AllMovies />} />;
+        <Route path="/trending-movies" element={<TrendingMovies />} />;
       </Routes>
     </div>
   );

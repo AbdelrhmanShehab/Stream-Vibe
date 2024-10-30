@@ -37,7 +37,7 @@ const MovieBanner = ({
           loading="lazy"
           src={backgroundMovieBanner}
           alt="background"
-          className="background-movie-banner"
+          className="background-movie-banner" 
         />
 
         <figcaption className="title-desc-movie-banner center-tranform">

@@ -14,7 +14,6 @@
 body {
   background-color: var(--mainColor);
   font-family: "Manrope", sans-serif;
-  /* width: 98%; */
 }
 button,
 .burger-menu {

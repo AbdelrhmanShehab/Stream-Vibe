@@ -34,30 +34,15 @@ import horror1 from "../../assets/imgs/horror1.jpg";
 import horror2 from "../../assets/imgs/horror2.jpeg";
 import horror3 from "../../assets/imgs/horror3.jpg";
 import horror4 from "../../assets/imgs/horror4.jpg";
-const sliderData = [
-  {
-    title: "Avengers: Endgame",
-    sliderImage: film4,
-    desc: "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.",
-  },
-  {
-    title: "Lost",
-    sliderImage: film2,
-    desc: "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
-  },
-  {
-    title: "Joker",
-    sliderImage: film7,
-    desc: "Failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while in Arkham State Hospital. Upon release, the pair embark on a doomed romantic ...",
-  },
-  {
-    title: "Room",
-    sliderImage: film13,
-    desc: "A little boy is held captive in a room with his mother since his birth, so he has never known the world outside.",
-  },
-];
 
-function MoviesShows() {
+const MoviesShows = (
+  movieTitle,
+  filmImg,
+  filmDesc,
+  filmDuration,
+  filmCat,
+  filmReleaseDate
+) => {
   const cardCatigoresData = [
     {
       title: "Action",
@@ -89,22 +74,27 @@ function MoviesShows() {
     {
       title: "Action",
       image: [film4, film12, film10, film17],
-      sizeCard: "290px",
+      sizeCard: "235px",
     },
     {
       title: "Adventure",
       image: [adv1, adv2, adv3, adv4],
-      sizeCard: "290px",
+      sizeCard: "235px",
     },
     {
       title: "Sci-fi",
       image: [sifi1, sifi2, sifi3, film6],
-      sizeCard: "290px",
+      sizeCard: "235px",
     },
     {
       title: "Drama",
       image: [film14, film13, film3, film5],
-      sizeCard: "290px",
+      sizeCard: "235px",
+    },
+    {
+      title: "Horror",
+      image: [film4, film12, film10, film17],
+      sizeCard: "235px",
     },
   ];
   // film card data
@@ -113,37 +103,61 @@ function MoviesShows() {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: sifi1,
-      title: "Inception",
-      filmDuiration: "1h 30mins",
+      movieTitle: "Life",
+      filmDuration: "1h 30mins",
       filmViews: "3k",
+      filmCat: "Si-fi",
+      filmDesc:
+        "As astronauts discover the first evidence of extra-terrestrial life on Mars, they begin realising that the life form is extremely intelligent and hostile.",
+      filmReleaseDate: "2018",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: adv2,
-      filmDuiration: "1h 54mins",
-      filmViews: "5k",
+      filmCat: "Adventure",
+      movieTitle: "Jumanji: Welcome to the Jungle",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "Four teenagers are sucked into a magical video game, and the only way they can escape is to work together to finish the game.",
+      filmReleaseDate: "2017",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: adv1,
-      filmDuiration: "2h 30mins",
-      filmViews: "2k",
+      filmCat: "Adventure",
+      movieTitle: "Jungle Cruise",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "Based on Disneyland's theme park ride, where a small riverboat takes a group of travelers through a jungle filled with dangerous animals.",
+      filmReleaseDate: "2017",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
-      filmImg: film2,
-      filmDuiration: "1h 40mins",
-      filmViews: "17k",
+      filmImg: film8,
+      movieTitle: "The Truman Show",
+      filmCat: "Adventure",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "An insurance salesman discovers his whole life is actually a reality TV show.",
+      filmReleaseDate: "1998",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film5,
-      filmDuiration: "1h 36mins",
+      movieTitle: "Jungle Cruise",
+      filmCat: "Adventure",
+      filmDuration: "1h 30mins",
       filmViews: "3k",
+      filmDesc:
+        "Colter Stevens, an army officer who is hired for a secret operation, finds himself in the body of a stranger. Soon, he is on a mysterious trail to track down the bomber of a commuter train in Chicago.",
+      filmReleaseDate: "2011",
     },
   ];
   const releaseFilmCardData = [
@@ -151,31 +165,61 @@ function MoviesShows() {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film6,
-      releaseDate: "15 March 2002",
+      filmReleaseDate: "15 March 2014",
+      movieTitle: "Interstellar",
+      filmCat: "Si-fi",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: sifi2,
-      releaseDate: "07 April 2023",
+      filmReleaseDate: "07 April 1999",
+      movieTitle: "The Matrix",
+      filmCat: "Si-fi",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
-      filmImg: sifi1,
-      releaseDate: "19 May 2023",
+      filmImg: film17,
+      filmReleaseDate: "19 May 2023",
+      movieTitle: "The Batman",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film3,
-      releaseDate: "05 Jan 2023",
+      filmReleaseDate: "05 Jan 2023",
+      movieTitle: "Breaking Bad",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse.",
     },
     {
       widthSizeCard: "230px",
       heightSizeCard: "300px",
       filmImg: film8,
-      releaseDate: "16 October 2023",
+      filmReleaseDate: "16 October 2023",
+      movieTitle: "The Batman",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
     },
   ];
   const ratingFilmCardData = [
@@ -183,24 +227,41 @@ function MoviesShows() {
       widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: film13,
-      releaseDate: "07 April 2023",
       filmViews: "10k",
-      filmDuiration: "1h 40mins",
+      filmReleaseDate: "16 October 2023",
+      movieTitle: "The Room",
+      filmCat: "Drama",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "After years of being held captive in an isolated shed by a kidnapper, Joy and her little son, Jack, manage to escape the confinement and gain their freedom.",
     },
     {
       widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: sifi3,
       filmViews: "20k",
-      filmDuiration: "1h 40mins",
+      filmReleaseDate: "16 October 2015",
+      movieTitle: "oblivion",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "Jack Harper, a drone repairman stationed on Earth that has been ravaged by war with extraterrestrials, questions his identity after rescuing the woman who keeps appearing in his dreams.",
     },
     {
       widthSizeCard: "290px",
       heightSizeCard: "350px",
       filmImg: film12,
-      releaseDate: "05 Jan 2023",
+      releaseDate: "05 Jan 2013",
       filmViews: "5k",
-      filmDuiration: "1h 40mins",
+      filmReleaseDate: "16 October 2023",
+      movieTitle: "Thor Ragnarouk",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "Ative in an isolated shed by a kidnapper, Joy and her little son, Jack, manage to escape the confinement and gain their freedom.",
     },
     {
       widthSizeCard: "290px",
@@ -208,7 +269,13 @@ function MoviesShows() {
       filmImg: film6,
       releaseDate: "16 October 2023",
       filmViews: "35k",
-      filmDuiration: "1h 40mins",
+      filmReleaseDate: "16 October 2012",
+      movieTitle: "Interstellar",
+      filmCat: "Action",
+      filmDuration: "1h 30mins",
+      filmViews: "3k",
+      filmDesc:
+        "After years of being held captive in an isolated shed by a kidnapper, Joy and her little son, Jack, manage to escape the confinement and gain their freedom.",
     },
   ];
   const currentLocation = useLocation();
@@ -280,9 +347,12 @@ function MoviesShows() {
                   widthSizeCard={data.widthSizeCard}
                   heightSizeCard={data.heightSizeCard}
                   filmImg={data.filmImg}
-                  filmDuiration={data.filmDuiration}
+                  filmDuration={data.filmDuration}
+                  filmCat={data.filmCat}
                   filmViews={data.filmViews}
-                  releaseDate={data.releaseDate}
+                  movieTitle={data.movieTitle}
+                  filmDesc={data.filmDesc}
+                  filmReleaseDate={data.filmReleaseDate}
                 />
               ))}
             </div>
@@ -306,10 +376,13 @@ function MoviesShows() {
                   classNameRating="duiration-film  "
                   widthSizeCard={data.widthSizeCard}
                   heightSizeCard={data.heightSizeCard}
+                  movieTitle={data.movieTitle}
                   filmImg={data.filmImg}
-                  filmDuiration={data.filmDuiration}
+                  filmDuration={data.filmDuration}
                   filmViews={data.filmViews}
-                  releaseDate={data.releaseDate}
+                  filmDesc={data.filmDesc}
+                  filmCat={data.filmCat}
+                  filmReleaseDate={data.filmReleaseDate}
                 />
               ))}
             </div>
@@ -333,10 +406,13 @@ function MoviesShows() {
                   classNameRating="duiration-film active "
                   widthSizeCard={data.widthSizeCard}
                   heightSizeCard={data.heightSizeCard}
+                  movieTitle={data.movieTitle}
                   filmImg={data.filmImg}
-                  filmDuiration={data.filmDuiration}
+                  filmDuration={data.filmDuration}
                   filmViews={data.filmViews}
-                  releaseDate={data.releaseDate}
+                  filmDesc={data.filmDesc}
+                  filmCat={data.filmCat}
+                  filmReleaseDate={data.filmReleaseDate}
                 />
               ))}
             </div>
@@ -351,5 +427,5 @@ function MoviesShows() {
       <Footer />
     </>
   );
-}
+};
 export default MoviesShows;

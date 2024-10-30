@@ -1,16 +1,15 @@
-import React from "react";
+  import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ResultCardMovie from "./ResultCardMovie.js";
 import "./movie-list.css";
-import LazyLoad from "react-lazyload";
 import { useLocation } from "react-router-dom";
 
 const MovieList = () => {
   const currentLocation = useLocation();
   const { result } = currentLocation.state || { result: [] };
   const movieCategory =
-    result.length > 0 && (result[1] === result[2]) === result[3]
+    result.length > 0 && result[1].category === result[4].category 
       ? result[4].category
       : "";
   return (

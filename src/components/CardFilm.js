@@ -3,6 +3,7 @@ import "./components.css";
 import clockIcon from "../assets/imgs/clockIcon.svg";
 import eyeIcon from "../assets/imgs/eyeIcon.svg";
 import ReviewStarts from "./ReviewStarts";
+import { useNavigate } from "react-router-dom";
 
 const CardFilm = ({
   widthSizeCard,
@@ -11,25 +12,43 @@ const CardFilm = ({
   classNameSeasons,
   classNameRelease,
   classNameRating,
-  releaseDate,
-  filmImg,
   showDiv,
-  filmDuiration,
+  movieTitle,
+  filmImg,
   filmViews,
+  filmDesc,
+  filmDuration,
+  filmCat,
+  filmReleaseDate,
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/movie", {
+      state: {
+        movieTitle,
+        filmImg,
+        filmDesc,
+        filmDuration,
+        filmCat,
+        filmReleaseDate,
+      },
+    });
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <article
         style={{ width: widthSizeCard, height: heightSizeCard }}
         className="movies-types-card"
-        // onClick={handleClick}
+        onClick={handleClick}
       >
         <img className="film-img-card" src={filmImg} />
         <div className="flex-duiration-seasion">
           {showDiv && (
             <div className={classNameDuiration}>
               <img src={clockIcon} />
-              <p>{filmDuiration}</p>
+              <p>{filmDuration}</p>
             </div>
           )}
           {showDiv && (
@@ -40,7 +59,7 @@ const CardFilm = ({
           )}
           {showDiv && (
             <div className={classNameRelease}>
-              <p>Released at {releaseDate}</p>
+              <p>Released at {filmReleaseDate}</p>
             </div>
           )}
           {showDiv && (
@@ -49,8 +68,7 @@ const CardFilm = ({
             </div>
           )}
         </div>
-      </article>
-      {" "}
+      </article>{" "}
     </>
   );
 };

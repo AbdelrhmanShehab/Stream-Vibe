@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import "../pages/Movies/movies.css";
 import SquareImg from "./SquareImg";
-import film4 from "../assets/imgs/film4.jpg";
-import film2 from "../assets/imgs/lost.jpg";
-import film7 from "../assets/imgs/film7.jpg";
-import film13 from "../assets/imgs/room2.jpg";
+import trendGodFather from "../assets/imgs/trendGodfather.jpg";
+import trendBladeRunner from "../assets/imgs/trendBladeRunner.jpg";
+import trendLionKing from "../assets/imgs/trendLionKing.jpg";
+import trendAvatar from "../assets/imgs/trendAvatar.jpg";
 import plusIconWhite from "../assets/imgs/plusWhite.svg";
 import soundIcon from "../assets/imgs/soundIcon.svg";
 import likeIcon from "../assets/imgs/likeIcon.svg";
 import leftWhite from "../assets/imgs/leftWhite.svg";
 import rightWhite from "../assets/imgs/rightWhite.svg";
 import MainBtn from "./MainBtn";
+import { useNavigate } from "react-router-dom";
 
 const squareData = [
   {
@@ -26,41 +27,80 @@ const squareData = [
     squareColor: "#0F0F0F",
   },
 ];
+
 const sliderData = [
   {
-    sliderTitle: "Avengers: Endgame",
-    sliderImage: film4,
-    sliderDesc:
-      "With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.",
+    movieTitle: "The God Father",
+    filmImg: trendGodFather,
+    filmDesc:
+      "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    filmDuration: "2h 23m",
+    filmCat: "Action",
+    filmReleaseDate: "2019",
   },
   {
-    sliderTitle: "Lost",
-    sliderImage: film2,
-    sliderDesc:
-      "The survivors of a plane crash find themselves stranded on a mysterious island. They are forced to work together for their survival when they realise that they are not alone on the island.",
+    movieTitle: "Blade Runner 2049",
+    filmImg: trendBladeRunner,
+    filmDesc:
+      "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
+    filmDuration: "2h 23m",
+    filmCat: "Sci-fi",
+    filmReleaseDate: "2017",
   },
   {
-    sliderTitle: "Joker",
-    sliderImage: film7,
-    sliderDesc:
+    movieTitle: "Avatar",
+    filmImg: trendAvatar,
+    filmDesc:
       "Failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while in Arkham State Hospital. Upon release, the pair embark on a doomed romantic ...",
+    filmDuration: "2h 23m",
+    filmCat: "Action",
+    filmReleaseDate: "2019",
   },
   {
-    sliderTitle: "Room",
-    sliderImage: film13,
-    sliderDesc:
-      "A little boy is held captive in a room with his mother since his birth, so he has never known the world outside.",
+    movieTitle: "The Lion King",
+    filmImg: trendLionKing,
+    filmDesc:
+      "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery.",
+    filmDuration: "2h 23m",
+    filmCat: "Action",
+    filmReleaseDate: "2019",
   },
 ];
+
 const BannerMovie = () => {
   const [imageIndex, setImageIndex] = useState(0);
+  const navigate = useNavigate();
 
-  function nextImage() {
-    setImageIndex((prevImage) => {
-      return prevImage === sliderData.length - 1 ? 0 : prevImage + 1;
+  const transferMoviesData = () => {
+    const {
+      movieTitle,
+      filmImg,
+      filmDesc,
+      filmDuration,
+      filmCat,
+      filmReleaseDate,
+    } = sliderData[imageIndex];
+    navigate("/movie", {
+      state: {
+        movieTitle,
+        filmImg,
+        filmDesc,
+        filmDuration,
+        filmCat,
+        filmReleaseDate,
+      },
     });
+    window.scrollTo(0, 0);
+  };
+
+  // Move to the next image in the slider
+  function nextImage() {
+    setImageIndex((prevImage) =>
+      prevImage === sliderData.length - 1 ? 0 : prevImage + 1
+    );
   }
 
+  // Move to the previous image in the slider
   function lastImage() {
     setImageIndex((prevImage) =>
       prevImage === 0 ? sliderData.length - 1 : prevImage - 1
@@ -74,17 +114,21 @@ const BannerMovie = () => {
 
         <img
           loading="lazy"
-          src={sliderData[imageIndex].sliderImage}
+          src={sliderData[imageIndex].filmImg}
           alt="background"
           className="background-movie-banner"
         />
 
         <figcaption className="title-desc-movie-banner center-tranform">
-          <h1>{sliderData[imageIndex].sliderTitle}</h1>
-          <p>{sliderData[imageIndex].sliderDesc}</p>
+          <h1>{sliderData[imageIndex].movieTitle}</h1>
+          <p>{sliderData[imageIndex].filmDesc}</p>
         </figcaption>
+
         <div className="three-icons-banner">
-          <MainBtn btnContent="Play Now" showIcon iconSize="18px" />
+          <div onClick={transferMoviesData}>
+            <MainBtn btnContent="Play Now" showIcon iconSize="18px" />
+          </div>
+
           {squareData.map((data, index) => (
             <SquareImg
               key={index}
@@ -93,6 +137,7 @@ const BannerMovie = () => {
             />
           ))}
         </div>
+
         <div className="flex-slider-banner-movies">
           <button
             style={{ background: "none", border: "none" }}
@@ -100,6 +145,7 @@ const BannerMovie = () => {
           >
             <SquareImg squareIcon={leftWhite} />
           </button>
+
           <div className="flex">
             {sliderData.map((_, index) => (
               <div
@@ -112,6 +158,7 @@ const BannerMovie = () => {
               ></div>
             ))}
           </div>
+
           <button
             onClick={nextImage}
             style={{ background: "none", border: "none" }}
