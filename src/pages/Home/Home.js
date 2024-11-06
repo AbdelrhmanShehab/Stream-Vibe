@@ -254,6 +254,7 @@ function Home() {
           <MainBtn btnContent="Ask a Question" />
         </div>
         <div className="flexQuestions">
+          {/* Mapping the Questions */}
           {FQAsData.map((data, index) => (
             <FAQs
               key={index}
@@ -273,6 +274,7 @@ function Home() {
           <Toggle />
         </div>
         <div className="payPlanFlex">
+          {/* mapping plans */}
           {payPlanData.map((data, index) => (
             <PayPlan
               key={index}

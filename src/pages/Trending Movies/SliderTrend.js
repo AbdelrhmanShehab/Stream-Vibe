@@ -46,6 +46,9 @@ const SliderCatigores = ({
         className={`flim-trend-banner ${isClicked ? "selected" : ""}`}
         onClick={handleClick}
       >
+        <p className="trend-slider-watch-now hide-small" onClick={openMovieClick}>
+              Watch now
+            </p>
         <div
           className="slider-trend-content"
           style={{ display: isClicked && windowWidth > 776 ? "flex" : "none" }}

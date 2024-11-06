@@ -299,3 +299,14 @@
   margin-top: 20px;
   margin-left: 130px;
 }
+.hide-small {
+  display: none;
+}
+@media (max-width: 600px) {
+  .right-corner-trend-order {
+    display: none;
+  }
+  .hide-small {
+    display: block;
+  }
+}
