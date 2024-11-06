@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Stream-Vibe/static/css/main.47f5fdf7.css",
-    "main.js": "/Stream-Vibe/static/js/main.b08b1827.js",
+    "main.css": "/Stream-Vibe/static/css/main.bf5326a2.css",
+    "main.js": "/Stream-Vibe/static/js/main.14ad8a62.js",
     "static/js/488.f374bc5e.chunk.js": "/Stream-Vibe/static/js/488.f374bc5e.chunk.js",
     "static/media/trendIndiana.png": "/Stream-Vibe/static/media/trendIndiana.315c64babd5b2a2bc13b.png",
     "static/media/horror1.jpg": "/Stream-Vibe/static/media/horror1.37d04deecc7d3b465dd1.jpg",
@@ -157,12 +157,12 @@
     "static/media/left-arrow-icon.svg": "/Stream-Vibe/static/media/left-arrow-icon.da1acfc88397d79ff585cdcdeb99c98a.svg",
     "static/media/right-arrow-icon.svg": "/Stream-Vibe/static/media/right-arrow-icon.f7ac8090b54d5d1cabc86d65c87e4047.svg",
     "static/media/plusWhite.svg": "/Stream-Vibe/static/media/plusWhite.d186dc7692f66f61f66b3f07a992954b.svg",
-    "main.47f5fdf7.css.map": "/Stream-Vibe/static/css/main.47f5fdf7.css.map",
-    "main.b08b1827.js.map": "/Stream-Vibe/static/js/main.b08b1827.js.map",
+    "main.bf5326a2.css.map": "/Stream-Vibe/static/css/main.bf5326a2.css.map",
+    "main.14ad8a62.js.map": "/Stream-Vibe/static/js/main.14ad8a62.js.map",
     "488.f374bc5e.chunk.js.map": "/Stream-Vibe/static/js/488.f374bc5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47f5fdf7.css",
-    "static/js/main.b08b1827.js"
+    "static/css/main.bf5326a2.css",
+    "static/js/main.14ad8a62.js"
   ]
 }
