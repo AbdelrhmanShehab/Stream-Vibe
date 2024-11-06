@@ -1,6 +1,6 @@
 # StreamVibe
 
-StreamVibe is a 7-page movie streaming website built with React, designed to offer an intuitive and seamless user experience. It allows users to explore movies across different categories, filter movies by category, search for specific titles, and view featured movies through a slider. The application also facilitates easy navigation between pages, passing movie data efficiently from one page to another.
+StreamVibe is a movie streaming website built with React, designed to offer an intuitive and seamless user experience. It allows users to explore movies across different categories, filter movies by category, search for specific titles, and view featured movies through a slider. The application also facilitates easy navigation between pages, passing movie data efficiently from one page to another.
 
 ## User Features
 
