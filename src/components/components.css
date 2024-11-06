@@ -633,13 +633,13 @@
   left: 50%;
   transform: translate(-50%);
   position: absolute;
-  z-index: 1000;
+  z-index: 1001;
   background-color: #141414;
   border: solid var(--borderColor) 1px;
   position: fixed;
 }
 .search-container {
-  z-index: 3;
+  z-index: 1000;
 }
 
 .label-box-search {

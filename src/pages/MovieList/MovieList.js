@@ -1,4 +1,4 @@
-  import React from "react";
+import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ResultCardMovie from "./ResultCardMovie.js";
@@ -8,10 +8,13 @@ import { useLocation } from "react-router-dom";
 const MovieList = () => {
   const currentLocation = useLocation();
   const { result } = currentLocation.state || { result: [] };
+
+  // Check if `result` has at least 5 items and that `category` is defined
   const movieCategory =
-    result.length > 0 && result[1].category === result[4].category 
+    result.length > 4 && result[1]?.category && result[1].category === result[4]?.category 
       ? result[4].category
-      : "";
+      : "Various";
+
   return (
     <>
       {currentLocation.pathname === "/movies-result" && <Header />}
@@ -19,13 +22,14 @@ const MovieList = () => {
         <h1 className="movies-result-head">{movieCategory} Movies</h1>
         <div className="movies-list-content">
           {result.length > 0 ? (
-            result.map((movie) => (
+            result.map((movie, index) => (
               <ResultCardMovie
+                key={index}
                 movieTitle={movie.title}
                 filmImg={movie.image}
                 filmDesc={movie.description}
                 filmDuration={movie.duration}
-                filmCat={movie.category}
+                filmCat={movie.category || "Unknown"}
                 filmReleaseDate={movie.releaseDate}
               />
             ))
@@ -33,7 +37,6 @@ const MovieList = () => {
             <p className="no-movies">No movies found :/</p>
           )}
         </div>
-        {/* End movies content */}
       </div>
       <Footer />
     </>
