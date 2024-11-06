@@ -17,10 +17,10 @@ StreamVibe is a 7-page movie streaming website built with React, designed to off
 
 - **React Components**: Built reusable functional components like Banner, MovieList, ResultCard, TrendingMovies, CardCatigores and so on
 - **Props and State**: Passed data between components using props and managed component states for dynamic rendering.
-- **Data Passing Across Components**: Used React’s props system to share filtered movie data and other state values between components.
+- **Data Passing Across Components**: Used React’s props system, **useNavigate** and **useLocation** to share filtered movie data and other state values between components.
 - **React Router (Navigation)**: Implemented navigation between pages using React Router, creating a multi-page feel.
 - **Event Handling**: Created interactive features with onClick handlers, especially in components like ResultCardMovie.
-- **React Hooks**: Used essential hooks like *useState* and *useEffect* for managing local states and side effects.
+- **React Hooks**: Used essential hooks like **useState**, **useEffect**, **useContext**, **useLocation**, **useNavigate** and **useRef** for managing local states and side effects.
 - **JSON Data Handling**: Imported and displayed local JSON data, managing details like title, image, description, category, duration, and release date.
 - **Lazy Loading**: Optimize loading times by deferring the loading of components.
 - **Conditional Rendering**: Displayed different components or styles based on conditions, e.g., for selected categories or movie cards.
