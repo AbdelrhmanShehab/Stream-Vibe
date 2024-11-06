@@ -40,6 +40,13 @@
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
 }
+.div-for-small-screen-click{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
 
 .image-banner-trending {
   position: absolute;
@@ -154,6 +161,12 @@
   }
   .all-div-trend-class {
     width: 105%;
+  }
+  .right-corner-trend-order {
+    display: none;
+  }
+  .div-for-small-screen-click{
+    display: block;
   }
 }
 .catigory-all-movies-title {
@@ -298,15 +311,4 @@
   justify-content: center;
   margin-top: 20px;
   margin-left: 130px;
-}
-.hide-small {
-  display: none;
-}
-@media (max-width: 600px) {
-  .right-corner-trend-order {
-    display: none;
-  }
-  .hide-small {
-    display: block;
-  }
 }
