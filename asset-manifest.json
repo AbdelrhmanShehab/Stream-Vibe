@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Stream-Vibe/static/css/main.bf5326a2.css",
-    "main.js": "/Stream-Vibe/static/js/main.14ad8a62.js",
+    "main.css": "/Stream-Vibe/static/css/main.346a657f.css",
+    "main.js": "/Stream-Vibe/static/js/main.87ea1bb6.js",
     "static/js/488.f374bc5e.chunk.js": "/Stream-Vibe/static/js/488.f374bc5e.chunk.js",
     "static/media/trendIndiana.png": "/Stream-Vibe/static/media/trendIndiana.315c64babd5b2a2bc13b.png",
     "static/media/horror1.jpg": "/Stream-Vibe/static/media/horror1.37d04deecc7d3b465dd1.jpg",
@@ -137,10 +137,13 @@
     "static/media/Logo.svg": "/Stream-Vibe/static/media/Logo.85e87d58fcfcf064353b7cc05dbc3cc2.svg",
     "static/media/mobile-icon.svg": "/Stream-Vibe/static/media/mobile-icon.89820e5c9236b3ba83325d519adb8ee7.svg",
     "static/media/laptop-icon.svg": "/Stream-Vibe/static/media/laptop-icon.5066cb4ef85b6a31fa219c9288c4c624.svg",
+    "static/media/accountIcon.svg": "/Stream-Vibe/static/media/accountIcon.6efbda231909b18d0af00961d13d2f30.svg",
     "static/media/likeIcon.svg": "/Stream-Vibe/static/media/likeIcon.969fda82d97b4d7c0e64347d14606c2d.svg",
     "static/media/gernesIcon.svg": "/Stream-Vibe/static/media/gernesIcon.c8da7016d7c7d065790a529d1569f956.svg",
     "static/media/egyptIcon.svg": "/Stream-Vibe/static/media/egyptIcon.0517cf4cb838abfe113cd2009e53e6c7.svg",
     "static/media/ratingIcon.svg": "/Stream-Vibe/static/media/ratingIcon.d39aa1e73cf97e93d9604fc01f28e56d.svg",
+    "static/media/returnIcon.svg": "/Stream-Vibe/static/media/returnIcon.9adb96ca955c6f51c8f54be56b3933fb.svg",
+    "static/media/muteIcon.svg": "/Stream-Vibe/static/media/muteIcon.997e9d9c429afa86f73db64b1d14bd46.svg",
     "static/media/eyeIcon.svg": "/Stream-Vibe/static/media/eyeIcon.ac2ebf1bd812dbc89cd74233f1eb2006.svg",
     "static/media/notifi-icon.svg": "/Stream-Vibe/static/media/notifi-icon.7dce886c1354a70f86d0deb0c0f4d853.svg",
     "static/media/soundIcon.svg": "/Stream-Vibe/static/media/soundIcon.20ae22d312abdcdad5b6909ccc01f580.svg",
@@ -148,6 +151,8 @@
     "static/media/languagesIcon.svg": "/Stream-Vibe/static/media/languagesIcon.25ad8a65c3bcfd0ee6061361a1b5ead4.svg",
     "static/media/clockIcon.svg": "/Stream-Vibe/static/media/clockIcon.dbce2581f7b95b49c87ef646c81b1a24.svg",
     "static/media/dateIcon.svg": "/Stream-Vibe/static/media/dateIcon.f1bb8ff1ed2aebfece51279a2430215d.svg",
+    "static/media/pause.svg": "/Stream-Vibe/static/media/pause.047e05f3ffaaa3cf640d95b185fe8a60.svg",
+    "static/media/playIcon.svg": "/Stream-Vibe/static/media/playIcon.2d9e835f2ea246020ad3178bd848794e.svg",
     "static/media/minus-icon.svg": "/Stream-Vibe/static/media/minus-icon.671c3ae01784eb629332808cb7826f94.svg",
     "static/media/dropdownIcon.svg": "/Stream-Vibe/static/media/dropdownIcon.e3990e70c55f12d4bfa13796008e0448.svg",
     "static/media/search-icon.svg": "/Stream-Vibe/static/media/search-icon.561ac9997f919930f4055096de0958ef.svg",
@@ -157,12 +162,12 @@
     "static/media/left-arrow-icon.svg": "/Stream-Vibe/static/media/left-arrow-icon.da1acfc88397d79ff585cdcdeb99c98a.svg",
     "static/media/right-arrow-icon.svg": "/Stream-Vibe/static/media/right-arrow-icon.f7ac8090b54d5d1cabc86d65c87e4047.svg",
     "static/media/plusWhite.svg": "/Stream-Vibe/static/media/plusWhite.d186dc7692f66f61f66b3f07a992954b.svg",
-    "main.bf5326a2.css.map": "/Stream-Vibe/static/css/main.bf5326a2.css.map",
-    "main.14ad8a62.js.map": "/Stream-Vibe/static/js/main.14ad8a62.js.map",
+    "main.346a657f.css.map": "/Stream-Vibe/static/css/main.346a657f.css.map",
+    "main.87ea1bb6.js.map": "/Stream-Vibe/static/js/main.87ea1bb6.js.map",
     "488.f374bc5e.chunk.js.map": "/Stream-Vibe/static/js/488.f374bc5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf5326a2.css",
-    "static/js/main.14ad8a62.js"
+    "static/css/main.346a657f.css",
+    "static/js/main.87ea1bb6.js"
   ]
 }
