@@ -40,7 +40,7 @@
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
 }
-.div-for-small-screen-click{
+.div-for-small-screen-click {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -165,9 +165,28 @@
   .right-corner-trend-order {
     display: none;
   }
-  .div-for-small-screen-click{
+  .div-for-small-screen-click {
     display: block;
   }
+  .trend-slider-watch-now {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .title-wacth-trend-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-trend-content {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  } 
 }
 .catigory-all-movies-title {
   color: white;
@@ -192,8 +211,11 @@
 
 .dropdown-content-trending {
   list-style: none;
-  margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  position: relative;
+  transform: translate(-20%, 0%);
+  z-index: 100;
 }
 
 .dropdown-content-trending li {

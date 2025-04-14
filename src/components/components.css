@@ -129,8 +129,10 @@
   margin-bottom: auto;
   z-index: 3;
 }
-.notifi-icon-header {
+.notifi-icon-header,
+.account-icon {
   padding-left: 14px;
+  cursor: pointer;
 }
 .links-header-menu {
   background-color: #0f0f0f;
@@ -368,7 +370,7 @@
   color: white;
   display: flex;
   position: absolute;
-  top: 73%;
+  top: 85%;
   left: 48%;
   transform: translate(-50%);
   width: 79%;
@@ -469,7 +471,7 @@
   transition: color 0.3s ease;
 }
 .movies-card-result:hover .film-title-result {
-  color: var(--secondryRedColor); 
+  color: var(--secondryRedColor);
 }
 
 /* review box */
@@ -637,6 +639,7 @@
   background-color: #141414;
   border: solid var(--borderColor) 1px;
   position: fixed;
+  z-index: 1000;
 }
 .search-container {
   z-index: 1000;
