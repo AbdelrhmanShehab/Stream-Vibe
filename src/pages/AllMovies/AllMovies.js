@@ -1,4 +1,4 @@
-import {React,useEffect} from "react";
+import { React, useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import movies from "../../Data/MoviesData.js";
@@ -15,8 +15,8 @@ const AllMovies = () => {
   }, []);
   return (
     <>
-      {currentLocation.pathname === "/all-movies" && <Header />}
       <div className="main-container-home2">
+        {currentLocation.pathname === "/" && <Header />}
         <h1 className="movies-result-head">Movies</h1>
         {/* All movies content */}
         <div className="movies-list-content">

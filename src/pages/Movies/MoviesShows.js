@@ -282,8 +282,8 @@ const MoviesShows = (
   // const { movie } = location.state || {};
   return (
     <>
-      {currentLocation.pathname === "/movies-shows" && <Header />}
       <main className="main-container-home2">
+      {currentLocation.pathname === "/movies-shows" && <Header />}
         <BannerMovie />
         <div className="container-movies-shows">
           <div className="red-catig center-flex">Movies</div>

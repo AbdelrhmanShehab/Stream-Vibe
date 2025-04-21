@@ -1,0 +1,121 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.signup {
+  margin-top: 50px;
+}
+.login-container {
+  margin-top: 40px;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #1f1f1f;
+}
+
+.login-container h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.login-container label {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.login-container input {
+  position: relative;
+  height: 50px;
+  padding: 11px 12px 12px 12px;
+  border-radius: 4px;
+  background-color: #181818;
+  border: 2px solid var(--borderColor);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.login-container p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.login-link {
+  color: #584ec9;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .login-container {
+    width: 95%;
+  }
+  .login-container h1 {
+    font-size: 2.5rem;
+  }
+  .login-container label {
+    font-size: 1.5rem;
+  }
+  .login-container input {
+    font-size: 1rem;
+  }
+}
+.form-category {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.form-category label {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.custom-select {
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.form-category label {
+  color: white;
+  font-size: 1.5rem;
+}
+.custom-select option {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.custom-select {
+  appearance: none;
+  background-color: #111;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+.custom-select:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.3);
+}

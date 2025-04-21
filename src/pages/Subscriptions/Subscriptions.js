@@ -34,8 +34,8 @@ function Subscriptions() {
 
   return (
     <>
-      {currentLocation.pathname === "/subscriptions" && <Header />}
       <div className="main-container-home2">
+      {currentLocation.pathname === "/subscriptions" && <Header />}
         <div className="flexSpaceBetween" style={{ marginTop: "100px" }}>
           <HeaderDesc
             title="Choose the plan that's right for you"

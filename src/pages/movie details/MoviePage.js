@@ -44,8 +44,8 @@ function MoviePage() {
   ];
   return (
     <>
-      {currentLocation.pathname === "/movie" && <Header />}
       <div className="main-container-home2">
+      {currentLocation.pathname === "/movie" && <Header />}
         <MovieBanner
           titleMovieBanner={movieTitle}
           backgroundMovieBanner={filmImg}

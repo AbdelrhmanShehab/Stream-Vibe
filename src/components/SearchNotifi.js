@@ -3,7 +3,10 @@ import { useNavigate } from "react-router-dom";
 import movies from "../Data/MoviesData";
 import searchIcon from "../assets/imgs/search-icon.svg";
 import notifiIcon from "../assets/imgs/notifi-icon.svg";
+import accountIcon from "../assets/imgs/accountIcon.svg";
+import { Link, useLocation } from "react-router-dom";
 import "./components.css";
+import { useSelector } from "react-redux";
 
 function SearchNotifi() {
   const [isVisibleSearch, setVisibleSearch] = useState(false);
@@ -11,6 +14,7 @@ function SearchNotifi() {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const searchRef = useRef(null);
   const navigate = useNavigate();
+  const user = useSelector((state) => state.user.user);
 
   function popSearchBar() {
     setVisibleSearch(!isVisibleSearch);
@@ -76,6 +80,25 @@ function SearchNotifi() {
           src={notifiIcon}
           alt="notifi-icon"
         />
+        <div className="header-account">
+          {user ? (
+            <Link to="/profile" className="account-link">
+              <div className="account-icon-header">
+                <p>{user.displayName}</p>
+                <img
+                  className="account-icon"
+                  src={accountIcon}
+                  alt="account icon"
+                />
+              </div>
+            </Link>
+          ) : (
+            <Link to="/login">
+              <button className="login-btn-header"> Login</button>
+            </Link>
+          )}
+        </div>
+        )}
       </div>
     </>
   );

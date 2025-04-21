@@ -198,12 +198,15 @@ function Home() {
   ];
   const currentLocation = useLocation();
   return (
-    <>
+    <div>
       <div className="fade-background-top"></div>
       <div className="fade-background-bottom"></div>
       <Banner />
       {/* header */}
-      {currentLocation.pathname === "/" && <Header />}
+      <div className="main-container-home2">
+        {" "}
+        {currentLocation.pathname === "/" && <Header />}
+      </div>
       {/* header */}
       {/* end of banner */}
       {/* start of main page content */}
@@ -287,7 +290,7 @@ function Home() {
         <FreeTrialBanner />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 export default Home;

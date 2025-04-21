@@ -111,8 +111,8 @@ function Support() {
 
   return (
     <>
-      {currentLocation.pathname === "/support" && <Header />}
       <div className="main-container-home2">
+        {currentLocation.pathname === "/support" && <Header />}
         <div className="flex-support">
           <div className="header-banner-support">
             <header>

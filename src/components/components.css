@@ -63,13 +63,13 @@
   height: 98px;
   z-index: 2;
   /* to make padding works even in mobile size screens */
-  padding-right: 20px;
-  padding-left: 20px;
+  /* padding-right: 20px;
+  padding-left: 20px; */
   /* to set all elements in the center verticlly */
   margin-right: auto;
   margin-left: auto;
   /* set the width for the container */
-  width: 89%;
+  width: 100%;
   position: relative;
 }
 .header-container {
@@ -134,19 +134,44 @@
   padding-left: 14px;
   cursor: pointer;
 }
+.account-icon {
+  color: #fff;
+  width: 38px;
+  height: 38px;
+}
+.account-icon-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-icon-header p {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+.login-btn-header {
+  padding: 16px 27px 16px 27px;
+  color: white;
+  font-weight: 600px;
+  border-radius: 6px;
+  background-color: var(--secondryRedColor);
+  border: none;
+  margin-left: 15px;
+}
 .links-header-menu {
   background-color: #0f0f0f;
   border: solid 3px #1a1a1a;
   border-radius: 10px;
-  height: 68px;
-  padding-left: 15px;
-  padding-right: 15px;
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
   top: 50%;
   list-style: none;
   color: white;
   display: flex;
   justify-content: space-around;
   gap: 14px;
+  cursor: pointer;
 }
 
 .link-menu {
@@ -157,6 +182,7 @@
   text-decoration: none;
   width: max-content;
   height: 100%;
+  cursor: pointer;
 }
 .side-bar {
   width: 290px;
